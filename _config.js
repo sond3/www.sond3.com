@@ -9,11 +9,12 @@ import transformImages from "lume/plugins/transform_images.ts";
 
 const site = lume({
     src: "./src",
-    location: new URL("https://www.segundofdez.com/"),
+    location: new URL("https://www.sond3.com"),
     server: {
         open: true,
     },
 });
+
 
 site
     .use(transformImages({
@@ -26,16 +27,15 @@ site
         ],
         keepDefaultPlugins: true,
     }))
-    .use(multilanguage({
-        languages: ["gl", "es", "en"],
-        defaultLanguage: "gl",
-    }))
     .use(favicon({
         input: "/favicon.svg",
     }))
-    .use(esbuild({})
+    .use(esbuild({}))
+    .use(basePath()) // Corregir la sintaxis y encadenar correctamente
+    .use(multilanguage({
+        languages: ["gl", "es", "en"],
+        defaultLanguage: "gl",
+    })
 );
-
-site.use(basePath());
 
 export default site;
