@@ -1,0 +1,77 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'brockmann', sans-serif;
+    text-rendering: auto;
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header,
+footer {
+    padding: 1rem;
+}
+
+address {
+    font-size:clamp(var(--fs-body-m), 5vw + .1rem, 1.8rem);
+    line-height: clamp(1.8rem, 7vw, 2.1rem);
+    font-style: normal;
+    max-width: 40ch;
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        margin-block-start: var(--space-1);
+        a {
+            &::after{
+                content: "→";
+                opacity: 0;
+                transition: ease-in-out 0.250s;
+            }
+            &:hover::after{
+                opacity: 1;
+                margin-left: var(--space-1);
+            }
+        }
+    }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); /* for IE only */
+    clip-path: inset(50%);
+    position: absolute;
+    white-space: nowrap;
+}
