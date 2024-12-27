@@ -5,7 +5,7 @@
     --accent-color-hover: color-mix(
       in srgb, var(--fg-color) 60%, var(--bg-color)
     );
-    --fg-accent: hsl(7, 100%, 59%);
+    --fg-accent: hsl(103, 97%, 71%);
     --fs-body: .9375rem;
     --fs-body-m: 1.375rem;
 
