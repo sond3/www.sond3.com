@@ -40,12 +40,11 @@ header,
 footer {
     padding: 1rem;
 }
-
 address {
-    font-size:clamp(var(--fs-body-m), 5vw + .1rem, 1.8rem);
-    line-height: clamp(1.8rem, 7vw, 2.1rem);
     font-style: normal;
-    max-width: 40ch;
+}
+/* address {
+    font-style: normal;
     ul {
         width: 100%;
         display: flex;
@@ -64,7 +63,7 @@ address {
             }
         }
     }
-}
+} */
 
 .visually-hidden:not(:focus):not(:active) {
     width: 1px;
