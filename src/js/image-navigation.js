@@ -1,22 +1,22 @@
 export function imageNavigation() {
-    const projectItems = document.querySelectorAll('.projects-item-info');
-    const projectMedias = document.querySelectorAll('.projects-item-media');
+    const projectInfo = document.querySelectorAll('.projects-item-info');
+    const projectItem = document.querySelectorAll('.projects-item');
 
-    projectItems.forEach((item, index) => {
+    projectInfo.forEach((item, index) => {
         item.addEventListener('click', () => {
-            const media = projectMedias[index];
+            const media = projectItem[index];
 
-            if (media.classList.contains('is-visible')) {
-                // Si el elemento ya tiene la clase is-visible, la quitamos
-                media.classList.remove('is-visible');
+            if (media.classList.contains('has-media')) {
+                // Si el elemento ya tiene la clase has-media, la quitamos
+                media.classList.remove('has-media');
             } else {
                 // Ocultar todos los elementos .projects-item-media
-                projectMedias.forEach(media => {
-                    media.classList.remove('is-visible');
+                projectItem.forEach(media => {
+                    media.classList.remove('has-media');
                 });
 
                 // Mostrar el elemento .projects-item-media correspondiente
-                media.classList.add('is-visible');
+                media.classList.add('has-media');
 
                 // Desplazar el elemento .projects-item-info a la parte superior
                 item.scrollIntoView({ block: 'start' });

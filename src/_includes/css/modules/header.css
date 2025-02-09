@@ -8,7 +8,6 @@ header {
 .logo {
     margin-block: calc(var(--space-1) * 1);
     width: 100%;
-    order: 4;
     svg {
         width: 100%;
         height: auto;
@@ -20,6 +19,7 @@ header {
 
     @media (--for-desktop-up) {
         margin-block: calc(var(--space-1) * 4);
+        order: 4;
     }
 }
 .description,
