@@ -1,7 +1,7 @@
 :root {
-    --bg-color: hsl(0, 0%, 93%);
-    --fg-color: hsl(0, 0%, 15%);
-    --fg-accent: hsl(236, 97%, 43%);
+    --bg-color: hsl(0, 0%, 95%);
+    --fg-color: hsl(0, 0%, 20%);
+    --fg-accent: hsl(228, 97%, 47%);
     /* --accent-color: var(--fg-color);
     --accent-color-hover: color-mix(
       in srgb, var(--fg-color) 60%, var(--bg-color)

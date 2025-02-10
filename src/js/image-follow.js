@@ -6,7 +6,7 @@ export function copyImageToInfo() {
         if (!mediaDiv || !infoDiv) return;
 
         let firstSource = mediaDiv.querySelector("source[srcset$='-s.webp']");
-        
+
         if (firstSource) {
             let imgTag = firstSource.parentElement.querySelector("img");
             if (!imgTag) return;
@@ -22,7 +22,7 @@ export function copyImageToInfo() {
             // Movimiento fluido con easing
             let targetX = 0;
             let currentX = 0;
-            const easeFactor = 0.1; // Factor de suavizado
+            const easeFactor = 0.05; // Factor de suavizado
 
             const onMouseMove = (e) => {
                 targetX = e.clientX;

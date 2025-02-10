@@ -87,23 +87,25 @@
         {{ content }}
     </main>
     <footer>
-    <h3 id="{{ footer }}">{{ footer }}</h3>
+        <h3 id="{{ footer }}">{{ footer }}</h3>
         <ul class="about">
             <li><a href="https://segundofdez.com"><span>S</span>egund<span>o</span> Fdez</a></li>
             <li><a href="https://nataliacrecente.com/"><span>N</span>atalia Crecente</a></li>
             <li><a href="https://dieg0v.com"><span>D</span>iego Vilariño</a></li>
             <li>3</li>
         </ul>
-        <address>
-            <a href="tel:+34665660814">M. (+34) 665 660 814</a>
-            <a href="tel:+34982981101">T. (+34) 982 981 101</a>
-            <a href="mailto:info@sond3.com">info@sond3.com</a>
-            <ul>
-               <li><a href="https://www.instagram.com/sond3estudio/" target="_blank">Instagram</a></li>
-               <li><a class="social" href="http://www.twitter.com/@sond3" target="_blank">X</a></li>
-            </ul>
-        </address>
-        <p class="cr"><small>© 2006-<span id="year"></span></small>. Sond3</p>
+        <div class="contact">
+            <address>
+                <a href="tel:+34665660814">M. (+34) 665 660 814</a>
+                <a href="tel:+34982981101">T. (+34) 982 981 101</a>
+                <a href="mailto:info@sond3.com">info@sond3.com</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/sond3estudio/" target="_blank">Instagram</a></li>
+                {{# <li><a class="social" href="http://www.twitter.com/@sond3" target="_blank">X</a></li> #}}
+                </ul>
+            </address>
+            <p class="cr"><small>© 2006-<span id="year"></span></small>. Sond3</p>
+        </div>
     </footer>
     {{# <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> #}}
     <script type="module" src="/main.js"></script>

@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-color);
+    /* linear gadient from white to bg-color */
     color: var(--fg-color);
 
     -webkit-font-smoothing: antialiased;
@@ -23,6 +24,7 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -43,6 +45,7 @@ footer {
 address {
     font-style: normal;
 }
+
 /* address {
     font-style: normal;
     ul {
