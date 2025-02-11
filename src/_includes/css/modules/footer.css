@@ -15,6 +15,7 @@ footer {
         font-size: var(--fs-body);
         font-weight: normal;
         text-transform: uppercase;
+        width: 100%;
     }
     .about{
         text-transform: uppercase;
@@ -60,10 +61,12 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         address {
+            font-size: clamp(var(--fs-body-m), 5vw + .1rem, 1.8rem);
+            letter-spacing: -.02rem;
             display: flex;
             flex-wrap: wrap;
-            column-gap: var(--space-1);
-            row-gap: calc(var(--space-1) / 4);
+            column-gap: calc(var(--space-1) * 2);
+            row-gap: calc(var(--space-1) / 10);
         }
 
         ul {
@@ -77,9 +80,11 @@ footer {
     }
 }
 .cr {
-    font-size: var(--fs-body);
-    letter-spacing: -.05rem;
+    /* font-size: var(--fs-body); */
+    font-size: clamp(var(--fs-body-m), 5vw + .1rem, 1.8rem);
+    letter-spacing: -.09rem;
     margin: 0;
+    margin-block-start: calc(var(--space-1) * 2);
     /* margin-left: calc(var(--space-1) * -1);
     width: calc(100% + var(--space-1) * 2);
     padding-inline: var(--space-1);
@@ -87,5 +92,6 @@ footer {
 }
 
 small {
-    font-size: var(--fs-body);
+    /* font-size: var(--fs-body); */
+    font-size: clamp(var(--fs-body-m), 5vw + .1rem, 1.8rem);
 }

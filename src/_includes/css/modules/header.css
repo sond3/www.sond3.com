@@ -33,6 +33,11 @@ address {
 }
 address {
     margin-right: auto;
+    a {
+        &:first-child {
+            margin-right: var(--space-1);
+        }
+    }
 }
 
 .nav {
