@@ -145,15 +145,12 @@
     position: relative;
     border-block-start: 1px solid var(--fg-color);
     &:last-child {
-    border-block-end: 1px solid var(--fg-color);
+        border-block-end: 1px solid var(--fg-color);
     }
     &.has-media {
         .projects-item-media {
             display: flex;
             opacity: 1;
-            @starting-style {
-                opacity: 0;
-            }
         }
         .project-media-preview {
             display: none !important;
@@ -162,13 +159,14 @@
 }
 
 .projects-item-media {
-    display: none;
+    opacity: 0;
+        display: none;
     /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
     overflow-x: auto;
     gap: calc(var(--space-1) / 2);
     padding: calc(var(--space-1)/2);
     border-top: 1px solid var(--fg-color);
-    transition-property: display opacity;
+    transition-property: opacity; ;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
     transition-behavior: allow-discrete;
