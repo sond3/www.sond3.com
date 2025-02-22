@@ -16,9 +16,10 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--space-1);
+    row-gap: calc(var(--space-1) / 2);
     text-transform: uppercase;
     align-items: baseline;
-    padding: calc(var(--space-1) / 1) var(--space-1);
+    padding: calc(var(--space-1) / 2) var(--space-1);
     background-color: var(--bg-color);
     cursor: pointer;
     transition: background-color .250s, color .5s;
@@ -82,12 +83,22 @@
     > *:not(time) {
         flex-basis: calc(calc(100% / 4) - var(--space-1) * -3);
     }
+    @media(--until-tablet) {
+        h2 {
+            flex-basis: auto;
+        }
+        > p {
+            flex-basis: 100%;
+        }
+    }
     a {
         /* color: var(--fg-accent); */
         padding: calc(var(--space-1) / 3) calc(var(--space-1) / 1.5);
         border-radius: var(--space-1);
         color: var(--fg-color);
         border: 1px solid currentColor;
+        /* background-color: var(--fg-accent);
+        color: var(--bg-color); */
         /* width: min-content; */
         flex: 0 1 auto;
         line-height: 100%;
@@ -113,16 +124,16 @@
     top: 50%;
     pointer-events: none;
     left: calc(var(--x));
-    transition-property: display opacity;
-    transition-duration: .5s;
-    transition-behavior: allow-discrete;
-    transform-origin: center;
     /* filter: grayscale(100%); */
     aspect-ratio: 1;
     object-fit: cover;
     width: 300px;
     border-radius: 50%;
     animation: float 3s ease-in-out infinite;
+    transition-property: display opacity;
+    transition-duration: .5s;
+    transition-behavior: allow-discrete;
+    transform-origin: center;
     @starting-style {
         display: none;
         opacity: 0;
@@ -151,6 +162,9 @@
         .projects-item-media {
             display: flex;
             opacity: 1;
+            @starting-style {
+                opacity: 0;
+            }
         }
         .project-media-preview {
             display: none !important;
@@ -159,14 +173,14 @@
 }
 
 .projects-item-media {
+    display: none;
     opacity: 0;
-        display: none;
     /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
     overflow-x: auto;
     gap: calc(var(--space-1) / 2);
     padding: calc(var(--space-1)/2);
     border-top: 1px solid var(--fg-color);
-    transition-property: opacity; ;
+    transition-property: display opacity;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
     transition-behavior: allow-discrete;
