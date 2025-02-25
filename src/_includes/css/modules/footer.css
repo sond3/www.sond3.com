@@ -9,6 +9,11 @@ footer {
             }
         }
     } */
+
+
+    h2, h3 {
+        font-family: "JetBrainsMono-Light";
+    }
     h3 {
         /* font-family: "safiro"; */
         margin-block-end: calc(var(--space-1) * 1);
