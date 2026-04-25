@@ -1,0 +1,39 @@
+es:
+  menu_project: Info
+  menu_work: Proyectos
+  meta_project: Proyecto
+  meta_year: Año
+  meta_client: Cliente
+  meta_categories: Categorías
+  description: "[Son de tres] somos un estudio que diseña y desarrolla proyectos de comunicación gráfica y productos digitales defendiendo un diseño honesto, ético y responsable."
+  categories:
+    grafica: Gráfica aplicada
+    identidad: Identidad
+    web: Web
+    editorial: Editorial
+gl:
+  menu_project: Info
+  menu_work: Proxectos
+  meta_project: Proxecto
+  meta_year: Ano
+  meta_client: Cliente
+  meta_categories: Categorías
+  description: "[Son de tres] somos un estudio que deseña e desenvolve proxectos de comunicación gráfica e produtos dixitais defendendo un deseño honesto, ético e responsable."
+  categories:
+    grafica: Gráfica aplicada
+    identidad: Identidade
+    web: Web
+    editorial: Editorial
+en:
+  menu_project: Info
+  menu_work: Projects
+  meta_project: Project
+  meta_year: Year
+  meta_client: Client
+  meta_categories: Categories
+  description: "[Son de tres] we are a studio that designs and develops graphic communication projects and digital products advocating for honest, ethical and responsible design."
+  categories:
+    grafica: Applied graphics
+    identidad: Identity
+    web: Web
+    editorial: Editorial

@@ -1,0 +1,47 @@
+---
+layout: layouts/default.vto
+---
+
+<article class="project-detail">
+    <header class="project-header">
+        <h1>{{ title }}</h1>
+        <dl class="project-meta">
+            <div>
+                <dt>{{ nav[lang].meta_year }}</dt>
+                <dd>{{ year }}</dd>
+            </div>
+            <div>
+                <dt>{{ nav[lang].meta_client }}</dt>
+                <dd>
+                    {{ if Array.isArray(client) }}
+                        {{ for c of client }}<span>{{ c }}</span>{{ /for }}
+                    {{ else }}
+                        {{ client }}
+                    {{ /if }}
+                </dd>
+            </div>
+            <div>
+                <dt>{{ nav[lang].meta_categories }}</dt>
+                <dd>
+                    {{ for cat of categories }}
+                    <span class="tag">{{ nav[lang].categories[cat] || cat }}</span>
+                    {{ /for }}
+                </dd>
+            </div>
+        </dl>
+    </header>
+
+    <div class="project-body">
+        {{ content }}
+    </div>
+
+    {{ if photos && photos.length }}
+    <div class="project-photos">
+        {{ for photo of photos }}
+        <figure>
+            <img src="{{ photo.src }}" alt="{{ photo['alt_' + lang] }}">
+        </figure>
+        {{ /for }}
+    </div>
+    {{ /if }}
+</article>

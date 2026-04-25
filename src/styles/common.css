@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Geist", sans-serif;
+    font-weight: 450;
+    line-height: 135%;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}

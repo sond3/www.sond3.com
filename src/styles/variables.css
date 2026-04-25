@@ -1,0 +1,19 @@
+:root,
+[data-theme="light"] {
+    --color-bg: hsl(0, 0%, 95%);
+    --color-fg: hsl(0, 0%, 15%);
+    --color-accent: hsl(160, 80%, 22%);
+    color-scheme: light;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-body: 0.9375rem;
+    --fs-caption: 0.875rem;
+}
+[data-theme="dark"] {
+    --color-bg: hsl(0, 0%, 10%);
+    --color-fg: hsl(0, 0%, 95%);
+    --color-accent: hsl(160, 70%, 52%);
+    color-scheme: dark;
+}

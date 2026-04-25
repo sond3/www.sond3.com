@@ -1,21 +1,26 @@
-import { setYear } from "./js/set-year.js";
-// import { setRandomBackground, getContrastingColor } from './js/g et-colors.js';
-import { copyImageToInfo } from "./js/image-follow.js";
-import { imageNavigation } from "./js/image-navigation.js";
-import { animateImagesOnLoad } from "./js/animate-lazy-load-img.js";
+import { initTheme } from "/scripts/theme.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-    // setRandomBackground();
-    // getContrastingColor();
-    animateImagesOnLoad();
-    imageNavigation();
-    copyImageToInfo();
-    setYear();
+initTheme();
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projectItems = document.querySelectorAll("[data-categories]");
+
+filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+        const isActive = btn.classList.contains("is-active");
+
+        filterBtns.forEach((b) => b.classList.remove("is-active"));
+
+        if (isActive) {
+            projectItems.forEach((item) => item.classList.remove("is-inactive"));
+        } else {
+            btn.classList.add("is-active");
+            projectItems.forEach((item) => {
+                const cats = item.dataset.categories.split(",");
+                item.classList.toggle("is-inactive", !cats.includes(filter));
+            });
+        }
+    });
 });
 
-// const loader = document.querySelector("#loader");
-// window.addEventListener("load", function() {
-//     if (loader) {
-//         loader.classList.add('done');
-//     }
-// });

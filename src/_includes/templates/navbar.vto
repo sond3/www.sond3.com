@@ -1,0 +1,39 @@
+{{ set homePage = search.page("id=home lang=" + lang) }}
+
+<nav class="nav">
+    {{ set projectPage = search.page("id=info lang=" + lang) }}
+    {{ set workPage = search.page("id=home lang=" + lang) }}
+    <ul class="nav-main">
+        <li>
+            <a href="{{ workPage.url }}">{{ nav[lang].menu_work }}</a>
+        </li>
+        <li>
+            <a href="{{ projectPage.url }}">{{ nav[lang].menu_project }}</a>
+        </li>
+    </ul>
+    <div class="nav-secondary">
+        <span class="nav-year">2006 — 2026</span>
+        {{ set otherLangs = alternates |> filter((a) => a.lang !== lang) }}
+        <ul class="nav-lang">
+        {{ for i, alt of otherLangs }}
+            {{ if i > 0 }}<li class="nav-lang-sep" aria-hidden="true">/</li>{{ /if }}
+            <li><a href="{{ alt.url }}">{{ alt.lang }}</a></li>
+        {{ /for }}
+        </ul>
+        <button data-theme-toggle aria-label="Cambiar tema"><span>Cambiar tema</span></button>
+    </div>
+</nav>
+
+<a class="logo" href="{{ homePage.url }}" class="logo" aria-label="sond3">
+    <span>Son</span><span>—</span><span>d3</span>
+</a>
+
+<div class="studio-info">
+    <p class="studio-description">{{ nav[lang].description }}</p>
+    <address>
+        <a href="tel:+34982981101">T. (+34) 982 981 101</a>
+        <a href="tel:+34665660814">M. (+34) 665 660 814</a><br>
+        <a href="mailto:info@sond3.com">info@sond3.com</a><br>
+        <a class="social" href="https://instagram.com/sond3estudio" rel="noopener noreferrer" target="_blank">Instagram</a>
+    </address>
+</div>
