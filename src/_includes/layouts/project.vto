@@ -5,7 +5,24 @@ layout: layouts/default.vto
 <article class="project-detail">
     <header class="project-header">
         <h1>{{ title }}</h1>
-        <dl class="project-meta">
+
+        <div class="project-meta">
+            <span class="project-client" aria-label="{{ nav[lang].meta_client }}">
+                {{ if Array.isArray(client) }}
+                    {{ client |> join(", ") }}
+                {{ else }}
+                    {{ client }}
+                {{ /if }}
+            </span>
+            <ul>
+            {{ for cat of categories }}
+            <li class="tag">{{ nav[lang].categories[cat] || cat }}</li>
+            {{ /for }}
+            </ul>
+
+            <time datetime="{{ year }}">{{ year }}</time>
+        </div>
+        {{# <dl class="project-meta">
             <div>
                 <dt>{{ nav[lang].meta_year }}</dt>
                 <dd>{{ year }}</dd>
@@ -14,7 +31,7 @@ layout: layouts/default.vto
                 <dt>{{ nav[lang].meta_client }}</dt>
                 <dd>
                     {{ if Array.isArray(client) }}
-                        {{ for c of client }}<span>{{ c }}</span>{{ /for }}
+                        {{ client |> join(", ") }}
                     {{ else }}
                         {{ client }}
                     {{ /if }}
@@ -28,7 +45,7 @@ layout: layouts/default.vto
                     {{ /for }}
                 </dd>
             </div>
-        </dl>
+        </dl> #}}
     </header>
 
     <div class="project-body">

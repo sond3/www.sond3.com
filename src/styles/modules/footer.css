@@ -1,0 +1,40 @@
+.footer {
+    container-type: inline-size;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+    line-height: 115%;
+    padding: 1rem;
+    padding-block-start: 12vh;
+    font-family: "GeistMono", monospace;
+    margin-block-start:3vh;
+    padding-block-end: 6vh;
+    /* border-top: 1px solid var(--color-fg); */
+    a {
+        color: var(--color-fg);
+        display: inline-block;
+    }
+    .logo {
+        font-family: "Geist", sans-serif;
+    }
+    h3,
+    address {
+        font-size: var(--fs-caption);
+    }
+    h3 {
+        grid-column: 4 /8;
+        margin: 0;
+        &::after {
+            content: "—" / "";
+            margin-left: 0.5rem;
+        }
+    }
+    .copy {
+        grid-column: span 4;
+        align-self: end;
+        font-size: var(--fs-caption);
+        margin: 0;
+        text-align: right;
+    }
+}

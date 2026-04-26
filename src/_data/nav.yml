@@ -5,6 +5,8 @@ es:
   meta_year: Año
   meta_client: Cliente
   meta_categories: Categorías
+  footer_contact: Contacto
+  footer_rights: Todos los derechos reservados
   description: "[Son de tres] somos un estudio que diseña y desarrolla proyectos de comunicación gráfica y productos digitales defendiendo un diseño honesto, ético y responsable."
   categories:
     grafica: Gráfica aplicada
@@ -18,6 +20,8 @@ gl:
   meta_year: Ano
   meta_client: Cliente
   meta_categories: Categorías
+  footer_contact: Contacto
+  footer_rights: Todos os dereitos reservados
   description: "[Son de tres] somos un estudio que deseña e desenvolve proxectos de comunicación gráfica e produtos dixitais defendendo un deseño honesto, ético e responsable."
   categories:
     grafica: Gráfica aplicada
@@ -31,6 +35,8 @@ en:
   meta_year: Year
   meta_client: Client
   meta_categories: Categories
+  footer_contact: Contact
+  footer_rights: All rights reserved
   description: "[Son de tres] we are a studio that designs and develops graphic communication projects and digital products advocating for honest, ethical and responsible design."
   categories:
     grafica: Applied graphics
