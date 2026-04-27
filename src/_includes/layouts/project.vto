@@ -5,7 +5,6 @@ layout: layouts/default.vto
 <article class="project-detail">
     <header class="project-header">
         <h1>{{ title }}</h1>
-
         <div class="project-meta">
             <span class="project-client" aria-label="{{ nav[lang].meta_client }}">
                 {{ if Array.isArray(client) }}
@@ -14,11 +13,12 @@ layout: layouts/default.vto
                     {{ client }}
                 {{ /if }}
             </span>
-            <ul>
+
+            {{# <ul>
             {{ for cat of categories }}
             <li class="tag">{{ nav[lang].categories[cat] || cat }}</li>
             {{ /for }}
-            </ul>
+            </ul> #}}
 
             <time datetime="{{ year }}">{{ year }}</time>
         </div>
