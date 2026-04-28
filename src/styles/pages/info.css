@@ -52,6 +52,7 @@
         font-size: clamp(1.5rem, calc(2.5vw + 1vw), 2.25rem);
         line-height: 125%;
         font-weight: 450;
+    max-width: 40ch;
     }
     p {
         text-indent: 9ch;

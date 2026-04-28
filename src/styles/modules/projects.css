@@ -110,12 +110,11 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: subgrid;
-    row-gap: 2rem;
     font-family: "GeistMono", monospace;
     font-size: var(--fs-caption);
     font-weight: 700;
     margin: 0;
-    margin-block-end: 1rem;
+    margin-block-end: 2rem;
     li:nth-child(1) { grid-column: 1 / 4; }
     li:nth-child(2) { grid-column: 4 / 8; }
     li:nth-child(3) { grid-column: 8 / 11; }
@@ -147,8 +146,8 @@
         margin: 0;
         grid-column: 4 / 8;
         font-size: clamp(1.5rem, calc(2.5vw + 1vw), 1.5rem);
-        line-height: 135%;
-        font-weight: 450;
+        line-height: 120%;
+        font-weight: 650;
         /* font-size: var(--fs-body); */
         /* background-color: red; */
     }
@@ -189,9 +188,36 @@
     max-width: 40ch;
     /* columns: 300px 2; */
     margin-block-start: 3rem;
+    /* display: flex; */
     p {
         &:first-child {
             margin-block-start: 0;
+        }
+    }
+    ul {
+        list-style-type: "";
+        margin: 0;
+        max-width: 20ch;
+        padding: 0;
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: var(--fs-caption);
+            font-family: "GeistMono", monospace;
+            line-height: 135%;
+            &:not(:last-child) {
+                margin-bottom: .5rem;
+            }
+            p {
+                margin: 0;
+                margin-left: 1.5rem;
+                &::before {
+                    display: inline-block;
+                    content: "→" / "";
+                    margin-left: -1.5rem;
+                    margin-right: 1rem;
+                }
+            }
         }
     }
 }
@@ -200,6 +226,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: .5rem;
+    margin-block-start: 6vh;
     figure {
         grid-column: span 4;
         margin: 0;
