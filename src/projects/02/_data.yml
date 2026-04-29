@@ -1,10 +1,40 @@
-year: 2025
-client:
-  - Universidade de Santigo de Compostela
-categories: [grafica, identidad]
-cover: https://www.sond3.com/img/projects/01-l.webp
+year: 2024
+client: 
+  - Gobierno de España - Ministerio de Cultura
+categories: [editorial]
+cover: /img/projects/europa-creativa/01-l.webp
 photos:
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for thes  exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/europa-creativa/01-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/02-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/03-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/04-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/05-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/06-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/07-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 

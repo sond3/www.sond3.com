@@ -2,6 +2,7 @@ import lume from "lume/mod.ts";
 import multilanguage from "lume/plugins/multilanguage.ts";
 import postcss from "lume/plugins/postcss.ts";
 import postcssImport from "npm:postcss-import";
+import postcssCustomMedia from "npm:postcss-custom-media";
 import favicon from "lume/plugins/favicon.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
@@ -28,6 +29,7 @@ site
     .use(postcss({
         plugins: [
             postcssImport(),
+            postcssCustomMedia(),
         ],
         keepDefaultPlugins: true,
     }))

@@ -48,10 +48,6 @@ layout: layouts/default.vto
         </dl> #}}
     </header>
 
-    <div class="project-body">
-        {{ content }}
-    </div>
-
     {{ if photos && photos.length }}
     <div class="project-photos">
         {{ for photo of photos }}
@@ -61,4 +57,8 @@ layout: layouts/default.vto
         {{ /for }}
     </div>
     {{ /if }}
+
+    <div class="project-body">
+        {{ content }}
+    </div>
 </article>

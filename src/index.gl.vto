@@ -8,7 +8,7 @@ keywords: deseño, gráfico, desenvolvemento, web, programación, identidade, di
 description: "somos un estudio que deseña e desenvolve proxectos de comunicación gráfica e produtos dixitais defendendo un deseño honesto, ético e responsable"
 ---
 
-{{ set projects = search.pages("lang=gl type=project", "year=asc") }}
+{{ set projects = search.pages("lang=gl type=project", "year=desc") }}
 <section class="project-list">
     <ul class="project-filter" aria-label="{{ nav[lang].meta_categories }}">
         {{ for cat of Object.keys(nav[lang].categories) }}

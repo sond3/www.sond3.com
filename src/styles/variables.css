@@ -1,3 +1,6 @@
+@custom-media --until-mobile (max-width: 768px);
+@custom-media --md (max-width: 900px);
+
 :root,
 [data-theme="light"] {
     --color-bg: hsl(0, 0%, 95%);

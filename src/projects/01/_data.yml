@@ -3,29 +3,52 @@ client:
   - Museo do Castro de Viladonga
   - Museo Universitario Domus do Mitreo
 categories: [grafica, identidad]
-cover: https://www.sond3.com/img/projects/01-l.webp
+cover: /img/projects/muralla/04-2-l.webp
 photos:
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for the exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/muralla/01-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for the exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/muralla/02-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for the exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/muralla/03-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for the exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/muralla/04-2-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
-  - src: https://www.sond3.com/img/projects/01-l.webp
-    alt_gl: Cartel da exposição dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
-    alt_es: Cartel de la exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
-    alt_en: Poster for the exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+  - src: /img/projects/muralla/05-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+
+  - src: /img/projects/muralla/06-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+
+  - src: /img/projects/muralla/07-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+
+  - src: /img/projects/muralla/08-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+
+  - src: /img/projects/muralla/09-l.webp
+    alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
+    alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
+    alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
+
+
+

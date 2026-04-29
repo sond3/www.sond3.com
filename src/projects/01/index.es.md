@@ -1,10 +1,36 @@
 ---
 lang: es
 id: project-grafica-exposicion-25-anos-da-declaracion-da-muralla-de-lugo-patrimonio-da-humanidade
-url: /es/grafica-exposicion-25-anos-da-declaracion-da-muralla-de-lugo-patrimonio-da-humanidade/
-title: Gráfica exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade
+url: /es/grafica-exposicion-25-anos-de-la-declaracion-de-la-muralla-de-lugo-patrimonio-de-la-humanidad/
+title: Exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade
 layout: layouts/project.vto
-description: Gráfica exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade.
+description: Exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade.
 ---
+Gráfica para la exposición 25 años de la declaración de la muralla de Lugo como Patrimonio de la Humanidad, llevada a cabo en el Museo del Castro de Viladonga y en el Museo Universitario Domus do Mitreo.
 
-gráfica exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade. Plataforma de divulgación sobre retículas en diseño gráfico y web. El proyecto nace con la voluntad de reunir en un único espacio el conocimiento visual y conceptual sobre las estructuras que sustentan el diseño.
+El proyecto toma la piedra como elemento central: el granito presente en la muralla se convierte en símbolo de permanencia, tiempo y construcción colectiva. Se construye una imagen gráfica que dialoga con la idea de estructura, resistencia y memoria histórica.
+
+- **2 modelos de cartel** · 50×70 cm · 
+DL LU 194-2025
+
+- **5 modelos de postales** · 10×15 cm · 
+DL LU 195-2025
+
+- **13 paneles** · 90×190 cm
+
+- **Coordinación**:
+Elena Varela Arias, 
+Dolores Dopico Caínzos
+
+- **Comisariado**:
+Celso Rodríguez Cao, 
+Diego Torres Iglesias
+
+- **Imágenes**:
+Celso Rodríguez Cao, 
+Diego Torres Iglesias, 
+Felipe Arias Vilas, 
+Marta Cancio Martínez
+
+- **Impresión**:
+Prelo XL

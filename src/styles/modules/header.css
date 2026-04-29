@@ -6,6 +6,9 @@
     column-gap: 2rem;
     row-gap: 3rem;
     line-height: 115%;
+    @media (--md) {
+        row-gap: 1.5rem;
+    }
 
 
     a {
@@ -41,6 +44,9 @@
 .nav-main {
     grid-column: 4 / 8;
     column-gap: 1.5rem;
+    @media (--md) {
+        grid-column: 1 / 6;
+    }
 }
 
 .nav-secondary {
@@ -49,6 +55,10 @@
     align-items: center;
     justify-content: flex-end;
     gap: 1.5rem;
+    @media (--md) {
+        gap: 1rem;
+        grid-column: 6 / -1;
+    }
 }
 
 
@@ -62,12 +72,19 @@
 .studio-description {
     grid-column: 1 / 4;
     margin: 0;
+    @media (--md) {
+        grid-column: 1 / -1;
+    }
 }
 address {
     grid-column: 4 / 9;
     font-style: normal;
     .social {
         margin-top: 1.1rem;
+    }
+    @media (--md) {
+        margin-top: 1.1rem;
+        grid-column: 1 / -1;
     }
 }
 .logo {

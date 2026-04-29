@@ -1,10 +1,10 @@
 ---
 lang: en
-id: project-identidade-e-grafica-aplicada-permoria
-url: /en/identidade-e-grafica-aplicada-permoria/
-title: Identity and Applied Graphics Permoria
+id: project-informe-resultados-europa-creativa-2021-2022
+url: /en/informe-resultados-europa-creativa-2021-2022/
+title: Europa Creativa Results Report 2021 / 2022
 layout: layouts/project.vto
-description: Identity and Applied Graphics Permoria.
+description: Europa Creativa results report 2021 / 2022.
 ---
 
-Graphic design for the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site.
+- **Formato** · 210×297 mm · NIPO: 190-24-083-4

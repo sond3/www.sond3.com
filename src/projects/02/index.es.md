@@ -1,10 +1,10 @@
 ---
 lang: es
-id: project-identidade-e-grafica-aplicada-permoria
-url: /es/identidade-e-grafica-aplicada-permoria/
-title: Identidade e gráfica aplicada Permoria
+id: project-informe-resultados-europa-creativa-2021-2022
+url: /es/informe-resultados-europa-creativa-2021-2022/
+title: Informe de resultados Europa Creativa año 2021 / 2022
 layout: layouts/project.vto
-description: Identidade e gráfica aplicada Permoria.
+description: Informe de resultados Europa Creativa año 2021 / 2022.
 ---
 
-Identidade e gráfica aplicada Permoria é unha plataforma dedicada á divulgación sobre retículas no deseño gráfico e web. O proxecto nace coa vontade de reunir nun único espazo o coñecemento visual e conceptual sobre as estruturas que sustentan o deseño.
+- **Formato** · 210×297 mm · NIPO: 190-24-083-4
