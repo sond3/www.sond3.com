@@ -25,7 +25,11 @@ description: "somos un estudio que dese√±a e desenvolve proxectos de comunicaci√
     <article class="project-item" data-categories="{{ project.categories |> join(',') }}">
         <a href="{{ project.url }}">
             {{ if project.cover }}
+            {{ if project.cover.endsWith('.webm') || project.cover.endsWith('.mp4') }}
+            <video src="{{ project.cover }}" autoplay loop muted playsinline></video>
+            {{ else }}
             <img src="{{ project.cover }}" alt="{{ project.title }}">
+            {{ /if }}
             {{ /if }}
             <div class="project-item-meta">
                 <h2 class="project-item-title" aria-label="{{ nav[lang].meta_project }}">{{ project.title }}</h2>

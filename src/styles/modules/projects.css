@@ -19,9 +19,9 @@
         grid-template-columns: subgrid;
         color: var(--color-fg);
         padding-block: .5rem;
-        &:hover {
+        /* &:hover {
             color: color-mix(in srgb, var(--color-fg) 50%, var(--color-bg) 40%)
-        }
+        } */
     }
     ul {
         margin: 0;
@@ -48,7 +48,7 @@
         grid-column: 11 / -1;
         text-align: right;
     }
-
+    video,
     img {
         display: none;
             position: fixed;
@@ -62,8 +62,11 @@
             /* mix-blend-mode: darken; */
             pointer-events: none;
     }
+    border-block: 1px solid transparent;
     &:hover {
-        img {
+        border-block-color: color-mix(in srgb, var(--color-fg) 100%, var(--color-bg) 0%);
+        img,
+        video {
             display: block;
         }
     }
@@ -287,15 +290,18 @@
     grid-template-columns: repeat(12, 1fr);
     gap: .5rem;
     margin-block-start: 6vh;
-    figure {
+    figure,
+    video {
         grid-column: span 4;
         margin: 0;
         @media (--until-mobile) {
             grid-column: span 12;
         }
-        img {
+        img,
+        video {
             vertical-align: middle;
             width: 100%;
+            display: block;
         }
     }
 }

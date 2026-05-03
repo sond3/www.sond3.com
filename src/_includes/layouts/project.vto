@@ -52,7 +52,11 @@ layout: layouts/default.vto
     <div class="project-photos">
         {{ for photo of photos }}
         <figure>
+            {{ if photo.src.endsWith('.webm') || photo.src.endsWith('.mp4') }}
+            <video src="{{ photo.src }}" autoplay loop muted playsinline></video>
+            {{ else }}
             <img src="{{ photo.src }}" alt="{{ photo['alt_' + lang] }}">
+            {{ /if }}
         </figure>
         {{ /for }}
     </div>
