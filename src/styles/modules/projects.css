@@ -235,7 +235,7 @@
     flex-direction: column;
     gap: 0; */
 
-    @media (--until-mobile) {  
+    @media (--until-mobile) {
         grid-column: 1 / -1;
     }
     p {
