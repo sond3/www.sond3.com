@@ -1,7 +1,7 @@
 ---
 lang: gl
 id: guia-museo
-url: /gl/guia-museo/
+url: /guia-museo/
 title: Guía do Museo do Castro de Viladonga
 layout: layouts/project.vto
 description: Guía do Museo do Castro de Viladonga.

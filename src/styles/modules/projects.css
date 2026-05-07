@@ -65,7 +65,7 @@
             inset: 50% auto auto 50%;
             transform: translate(-50%, -50%);
             /* filter: grayscale(1); */
-            /* mix-blend-mode: darken; */
+            /* mix-blend-mode: overlay; */
             pointer-events: none;
     }
     border-block: 1px solid transparent;
