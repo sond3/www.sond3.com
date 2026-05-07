@@ -2,6 +2,15 @@ import { initTheme } from "/scripts/theme.js";
 
 initTheme();
 
+document.querySelectorAll("img[loading='lazy'], video").forEach((el) => {
+    const markLoaded = () => el.classList.add("is-loaded");
+    if (el.complete || el.readyState >= 2) {
+        markLoaded();
+    } else {
+        el.addEventListener(el.tagName === "VIDEO" ? "canplay" : "load", markLoaded, { once: true });
+    }
+});
+
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projectItems = document.querySelectorAll("[data-categories]");
 

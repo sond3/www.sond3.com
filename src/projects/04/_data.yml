@@ -1,0 +1,16 @@
+year: 2009
+client: 
+  - Museo do Castro de Viladonga
+categories: [editorial]
+photos_layout: has-half
+cover: /img/projects/moedas/catalogo-monedas.webp
+photos:
+  - src:  /img/projects/moedas/catalogo-monedas.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga
+
+  - src:  /img/projects/moedas/catalogo-monedas-interior.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga

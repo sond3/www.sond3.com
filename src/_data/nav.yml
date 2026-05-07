@@ -12,7 +12,7 @@ es:
     grafica: Gráfica aplicada
     identidad: Identidad
     web: Web
-    desarrollo: desarrollo
+    desarrollo: Desarrollo
     editorial: Editorial
 gl:
   menu_project: Info
@@ -27,7 +27,7 @@ gl:
   categories:
     grafica: Gráfica aplicada
     identidad: Identidade
-    desarrollo: desenvolvemento
+    desarrollo: Desenvolvemento
     web: Web
     editorial: Editorial
 en:
@@ -44,5 +44,5 @@ en:
     grafica: Applied graphics
     identidad: Identity
     web: Web
-    desarrollo: development
+    desarrollo: Development
     editorial: Editorial

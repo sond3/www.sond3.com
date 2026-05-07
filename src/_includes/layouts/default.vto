@@ -24,7 +24,17 @@
     />
     <meta property="og:image" content="https://www.sond3.com/rrss.jpg">
     <meta property="og:site_name" content="Sond3" />
+    <link rel="preload" href="/fonts/Geist[wght].woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/GeistMono[wght].woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/main.css">
+    <meta name="view-transition" content="same-origin">
+    <script>
+        (function(){
+            var s = localStorage.getItem('theme');
+            var t = s || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.dataset.theme = t;
+        })();
+    </script>
 </head>
 <body class="page-{{ id }}">
     <header class="header">

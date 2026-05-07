@@ -34,6 +34,12 @@
         grid-column: 1 / 4;
         font-weight: 600;
     }
+    .project-item-client,
+    .project-item-categories span,
+    .project-item-year {
+        font-size: var(--fs-caption);
+        font-family: "GeistMono", monospace;
+    }
     .project-item-client {
         grid-column: 4 / 8;
     }
@@ -63,11 +69,13 @@
             pointer-events: none;
     }
     border-block: 1px solid transparent;
-    &:hover {
-        border-block-color: color-mix(in srgb, var(--color-fg) 100%, var(--color-bg) 0%);
-        img,
-        video {
-            display: block;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            border-block-color: color-mix(in srgb, var(--color-fg) 100%, var(--color-bg) 0%);
+            img,
+            video {
+                display: block;
+            }
         }
     }
     .project-item-meta {
@@ -302,6 +310,13 @@
             vertical-align: middle;
             width: 100%;
             display: block;
+            aspect-ratio: auto 4/3;
+        }
+    }
+    &.has-half {
+        figure,
+        video {
+            grid-column: span 6;
         }
     }
 }

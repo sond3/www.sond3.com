@@ -18,6 +18,11 @@
             width: 100%;
             aspect-ratio: 16/8;
             object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            &.is-loaded {
+                opacity: 1;
+            }
             @media (--until-mobile) {  
                 aspect-ratio: 1/1;  
             }
