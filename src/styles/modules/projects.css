@@ -8,6 +8,37 @@
         list-style-type: "";
         padding: 0;
     }
+    &.as-img {
+        column-gap: 1rem;
+        .project-item {
+            display: block;
+            grid-column: span 3;
+            .project-item-meta {
+                margin-block-start: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+            img, video {
+                position: relative;
+                opacity: 1;
+                display: block;
+                width: 100%;
+            }
+        }
+        .project-filter {
+            margin-bottom: 1rem;
+        }
+        .project-list-names {
+            display: none;
+        }
+        .project-item-client,
+        .project-item-categories span,
+        .project-item-year {
+            text-align: left;
+            display: none;
+        }   
+    }
 }
 .project-item {
     grid-column: 1 / -1;

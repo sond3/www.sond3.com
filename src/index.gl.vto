@@ -10,6 +10,7 @@ description: "somos un estudio que dese√±a e desenvolve proxectos de comunicaci√
 
 {{ set projects = search.pages("lang=gl type=project", "year=desc") }}
 <section class="project-list">
+    <button class="change-layout">Cambiar layout</button>
     <ul class="project-filter" aria-label="{{ nav[lang].meta_categories }}">
         {{ for cat of Object.keys(nav[lang].categories) }}
         <li><button class="filter-btn" data-filter="{{ cat }}">{{ nav[lang].categories[cat] }}</button></li>

@@ -1,4 +1,5 @@
 import { initTheme } from "/scripts/theme.js";
+import "/scripts/layout.js";
 
 initTheme();
 
