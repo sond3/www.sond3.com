@@ -16,17 +16,13 @@
         {{ set otherLangs = alternates |> filter((a) => a.lang !== lang) }}
         <ul class="nav-lang">
         {{ for i, alt of otherLangs }}
-            {{ if i > 0 }}<li class="nav-lang-sep" aria-hidden="true">/</li>{{ /if }}
+            {{ if i > 0 }}<li class="nav-lang-sep" aria-hidden="true">|</li>{{ /if }}
             <li><a href="{{ alt.url }}">{{ alt.lang }}</a></li>
         {{ /for }}
         </ul>
         <button data-theme-toggle aria-label="Cambiar tema"><span>Cambiar tema</span></button>
     </div>
 </nav>
-
-<a href="{{ homePage.url }}" class="logo" aria-label="sond3">
-    <span>Son</span><span>—</span><span>d3</span>
-</a>
 
 <div class="studio-info">
     <p class="studio-description">{{ nav[lang].description }}</p>
@@ -37,3 +33,7 @@
         <a class="social" href="https://instagram.com/sond3estudio" rel="noopener noreferrer" target="_blank">Instagram</a>
     </address>
 </div>
+
+<a href="{{ homePage.url }}" class="logo" aria-label="sond3">
+    <span>Son</span><span>—</span><span>d3</span>
+</a>

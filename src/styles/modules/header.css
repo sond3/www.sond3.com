@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 2rem;
-    row-gap: 3rem;
+    row-gap: 1rem;
     line-height: 115%;
     @media (--md) {
         row-gap: 1.5rem;
