@@ -1,5 +1,5 @@
 es:
-  menu_project: Info
+  menu_project: Estudio
   menu_work: Proyectos
   meta_project: Proyecto
   meta_year: Año
@@ -15,7 +15,7 @@ es:
     desarrollo: Desarrollo
     editorial: Editorial
 gl:
-  menu_project: Info
+  menu_project: Estudio
   menu_work: Proxectos
   meta_project: Proxecto
   meta_year: Ano
@@ -31,7 +31,7 @@ gl:
     web: Web
     editorial: Editorial
 en:
-  menu_project: Info
+  menu_project: Studio
   menu_work: Projects
   meta_project: Project
   meta_year: Year

@@ -1,0 +1,28 @@
+year: 2024
+client:
+  - Consibertromics
+categories: [web, desarrollo]
+
+photos_layout: has-half
+web: https://www.consibertromics.com
+cover: /img/projects/web-consibertromics/consibertromics-1.webp
+photos:
+  - src: /img/projects/web-consibertromics/consibertromics.webm
+    alt_gl: Web de Consibertromics
+    alt_es: Web de Consibertromics
+    alt_en: Consibertromics website
+
+  - src: /img/projects/web-consibertromics/consibertromics-1.webp
+    alt_gl: Web de Consibertromics
+    alt_es: Web de Consibertromics
+    alt_en: Consibertromics website
+
+  - src: /img/projects/web-consibertromics/consibertromics-2.webp
+    alt_gl: Web de Consibertromics
+    alt_es: Web de Consibertromics
+    alt_en: Consibertromics website
+
+  - src: /img/projects/web-consibertromics/consibertromics-3.webp
+    alt_gl: Web de Consibertromics
+    alt_es: Web de Consibertromics
+    alt_en: Consibertromics website

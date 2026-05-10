@@ -1,0 +1,21 @@
+year: 2024
+client: 
+  - Joe Alvez
+categories: [grafica]
+photos_layout: has-half
+cover: /img/projects/cartel-joe/cartel-joe-1.webp
+photos:
+  - src: /img/projects/cartel-joe/cartel-joe-1.webp
+    alt_gl: Cartel de Joe Alvez
+    alt_es: Cartel de Joe Alvez
+    alt_en: Joe Alvez poster
+
+  - src: /img/projects/cartel-joe/cartel-joe-2.webp
+    alt_gl: Cartel de Joe Alvez
+    alt_es: Cartel de Joe Alvez
+    alt_en: Joe Alvez poster
+
+  - src: /img/projects/cartel-joe/cartel-joe-3.webp
+    alt_gl: Cartel de Joe Alvez
+    alt_es: Cartel de Joe Alvez
+    alt_en: Joe Alvez poster

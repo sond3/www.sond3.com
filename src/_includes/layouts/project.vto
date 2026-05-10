@@ -22,6 +22,11 @@ layout: layouts/default.vto
 
             <time datetime="{{ year }}">{{ year }}</time>
         </div>
+        {{ if web }}
+        <div class="project-web">
+            <a href="{{ web }}" target="_blank" rel="noopener">{{ web.replace(/^https?:\/\//, '') }}</a>
+        </div>
+        {{ /if }}
         {{# <dl class="project-meta">
             <div>
                 <dt>{{ nav[lang].meta_year }}</dt>

@@ -81,6 +81,10 @@ address {
     font-style: normal;
     .social {
         margin-top: 1.1rem;
+        &::after {
+            content: "↗" / "";
+            margin-left: 0.5rem;
+        }
     }
     @media (--md) {
         margin-top: 1.1rem;
@@ -95,6 +99,7 @@ address {
     line-height: 78%;
     overflow: hidden;
     display: inline-flex;
+    margin-block-start: 2vh;
     /* span {
         &:first-child {
             color: var(--color-accent);

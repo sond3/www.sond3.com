@@ -1,0 +1,31 @@
+year: 2024
+client:
+  - Museo do Castro de Viladonga
+categories: [grafica, editorial, identidad]
+photos_layout: has-half  big-first
+cover: /img/projects/folleto-azabache/folleto-1.webp
+photos:
+  - src: /img/projects/folleto-azabache/folleto-2.webp
+    alt_gl: Folleto da exposición O acibeche no mundo antigo
+    alt_es: Folleto de la exposición El azabache en el mundo antiguo
+    alt_en: Booklet for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/folleto-azabache/folleto-1.webp
+    alt_gl: Folleto da exposición O acibeche no mundo antigo
+    alt_es: Folleto de la exposición El azabache en el mundo antiguo
+    alt_en: Booklet for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/folleto-azabache/folleto-3.webp
+    alt_gl: Folleto da exposición O acibeche no mundo antigo
+    alt_es: Folleto de la exposición El azabache en el mundo antiguo
+    alt_en: Booklet for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/folleto-azabache/folleto-4.webp
+    alt_gl: Folleto da exposición O acibeche no mundo antigo
+    alt_es: Folleto de la exposición El azabache en el mundo antiguo
+    alt_en: Booklet for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/folleto-azabache/folleto-5.webp
+    alt_gl: Folleto da exposición O acibeche no mundo antigo
+    alt_es: Folleto de la exposición El azabache en el mundo antiguo
+    alt_en: Booklet for the exhibition Jet in the Ancient World

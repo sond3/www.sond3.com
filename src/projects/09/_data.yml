@@ -1,0 +1,56 @@
+year: 2024
+client: 
+  - Ideahs - Universidade de Santiago de Compostela
+categories: [grafica, identidad]
+cover: /img/projects/ideahs/ideahs-tote.webp
+photos:
+  - src: /img/projects/ideahs/ideahs-logo.webm
+    alt_gl: Identidade visual de Ideahs
+    alt_es: Identidad visual de Ideahs
+    alt_en: Ideahs visual identity
+
+  - src: /img/projects/ideahs/ideahs-iso.webp
+    alt_gl: Isotipo de Ideahs
+    alt_es: Isotipo de Ideahs
+    alt_en: Ideahs isotype
+
+  - src: /img/projects/ideahs/ideahs-sistema.webp
+    alt_gl: Sistema de identidade de Ideahs
+    alt_es: Sistema de identidad de Ideahs
+    alt_en: Ideahs identity system
+
+  - src: /img/projects/ideahs/ideas-version-descripcion.webp
+    alt_gl: Versión do logotipo de Ideahs
+    alt_es: Versión del logotipo de Ideahs
+    alt_en: Ideahs logo version
+
+  - src: /img/projects/ideahs/ideas-version-hori-descripcion.webp
+    alt_gl: Versión horizontal do logotipo de Ideahs
+    alt_es: Versión horizontal del logotipo de Ideahs
+    alt_en: Ideahs horizontal logo version
+
+  - src: /img/projects/ideahs/ideas-version-vertical.webp
+    alt_gl: Versión vertical do logotipo de Ideahs
+    alt_es: Versión vertical del logotipo de Ideahs
+    alt_en: Ideahs vertical logo version
+
+
+  - src: /img/projects/ideahs/ideahs-logo.webp
+    alt_gl: Identidade visual de Ideahs
+    alt_es: Identidad visual de Ideahs
+    alt_en: Ideahs visual identity
+
+  - src: /img/projects/ideahs/ideahs-tarjetas.webp
+    alt_gl: Tarxetas de visita de Ideahs
+    alt_es: Tarjetas de visita de Ideahs
+    alt_en: Ideahs business cards
+
+  - src: /img/projects/ideahs/ideahs-libreta.webp
+    alt_gl: Libreta de Ideahs
+    alt_es: Libreta de Ideahs
+    alt_en: Ideahs notebook
+
+  - src: /img/projects/ideahs/ideahs-tote.webp
+    alt_gl: Tote bag de Ideahs
+    alt_es: Tote bag de Ideahs
+    alt_en: Ideahs tote bag
