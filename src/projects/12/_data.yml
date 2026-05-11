@@ -4,7 +4,7 @@ web: https://www.instagram.com/postersxgazabyadgfad
 client: 
   - Sond3
 photos_layout: has-half
-cover: /img/projects/poster-gaza/poster-gaza-01.webp
+cover: /img/projects/poster-gaza/poster-gaza-01-s.webp
 photos:
   - src: /img/projects/poster-gaza/poster-gaza-01.webp
     alt_gl: Cartel Gaza

@@ -26,7 +26,7 @@ description: "somos un estudio que dese√±a e desenvolve proxectos de comunicaci√
         <li>{{ nav[lang].meta_year }}</li>
     </ul>
     {{ for project of projects }}
-    <article class="project-item" data-categories="{{ project.categories |> join(',') }}">
+    <article class="project-item" data-categories="{{ project.categories |> join(',') }}"{{ if project.cover }} style="--cover: url('{{ project.cover }}')"{{ /if }}>
         <a href="{{ project.url }}">
             {{ if project.cover }}
             {{ if project.cover.endsWith('.webm') || project.cover.endsWith('.mp4') }}

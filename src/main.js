@@ -15,22 +15,33 @@ document.querySelectorAll("img[loading='lazy'], video").forEach((el) => {
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projectItems = document.querySelectorAll("[data-categories]");
 
+const activeFilters = new Set();
+
+function applyFilters() {
+    projectItems.forEach((item) => {
+        if (activeFilters.size === 0) {
+            item.classList.remove("is-inactive");
+        } else {
+            const cats = item.dataset.categories.split(",");
+            const matches = [...activeFilters].some((f) => cats.includes(f));
+            item.classList.toggle("is-inactive", !matches);
+        }
+    });
+}
+
 filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         const filter = btn.dataset.filter;
-        const isActive = btn.classList.contains("is-active");
 
-        filterBtns.forEach((b) => b.classList.remove("is-active"));
-
-        if (isActive) {
-            projectItems.forEach((item) => item.classList.remove("is-inactive"));
+        if (activeFilters.has(filter)) {
+            activeFilters.delete(filter);
+            btn.classList.remove("is-active");
         } else {
+            activeFilters.add(filter);
             btn.classList.add("is-active");
-            projectItems.forEach((item) => {
-                const cats = item.dataset.categories.split(",");
-                item.classList.toggle("is-inactive", !cats.includes(filter));
-            });
         }
+
+        applyFilters();
     });
 });
 

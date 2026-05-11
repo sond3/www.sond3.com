@@ -1,0 +1,18 @@
+year: 2023
+client:
+  - Cenlitros
+categories: [web, desarrollo]
+web: https://cenlitros.com
+photos_layout: has-half
+cover: /img/projects/web-cenlitros/cenlitros-web-estudio-s.webp
+photos:
+  - src: /img/projects/web-cenlitros/cenlitros-web-estudio.webp
+    alt_gl: Web de Cenlitros
+    alt_es: Web de Cenlitros
+    alt_en: Cenlitros website
+
+  - src: /img/projects/web-cenlitros/cenlitros-web-proyeto.webp
+    alt_gl: Web de Cenlitros
+    alt_es: Web de Cenlitros
+    alt_en: Cenlitros website
+

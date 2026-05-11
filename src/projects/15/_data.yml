@@ -1,9 +1,9 @@
 year: 2023
 client:
   - Museo do Castro de Viladonga
-categories: [grafica, editorial, identidad]
+categories: [grafica, identidad]
 photos_layout: has-half big-first
-cover: /img/projects/cartel-azabache/cartel-azabache-01.webp
+cover: /img/projects/cartel-azabache/cartel-azabache-01-s.webp
 photos:
   - src: /img/projects/cartel-azabache/cartel-azabache-01.webp
     alt_gl: Carteis da exposición O acibeche no mundo antigo

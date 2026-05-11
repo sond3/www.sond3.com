@@ -11,14 +11,15 @@
     }
     &.as-img {
         /* gap: .5rem; */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         .project-item {
             position: relative;
             display: block;
-            grid-column: span 3;
+            grid-column: auto;
             border-block: none;
             margin-top: 1rem;
             align-content: baseline;
-            &:nth-of-type(2n) { 
+            /* &:nth-of-type(2n) { 
                 grid-column: span 3; 
             }
             &:nth-of-type(3n) { 
@@ -26,54 +27,33 @@
             }
             &:nth-of-type(4n) { 
                 grid-column: span 3; 
-            }
+            } */
             > a {
                 padding-block: 0;
             }
-            /* .project-item-meta {
-                margin-block-start: .5rem;
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
-                display: none;
-            } */
             img, video {
                 position: relative;
-                /* opacity: 1; */
                 display: block;
                 width: 100%;
-                filter: grayscale(0);
-                opacity: 1;
+                filter: grayscale(1);
+                opacity: .8;
+                transition: filter 0.4s ease, opacity 0.4s ease;
             }
-            /* &:hover {
-                img, video {
-                    filter: grayscale(0);
-                }
-            } */
             @media (hover: hover) and (pointer: fine) {
                 &:hover {
-
-                /* grid-column: span 3 ; */
                     img, video {
                         filter: grayscale(0);
                         opacity: 1;
                     }
-                    .project-item-title {
-
-                        position: absolute;
-                        display: grid;
-                        display: none;
-                        /* background: linear-gradient(
-                            to top,
-                            color-mix(in srgb, var(--color-fg) 100%, transparent) 0%,
-                            color-mix(in srgb, var(--color-fg) 0%, transparent) 100%
-                        ); */
-                    }
                 }
             }
         }
+        .project-list-options {
+            grid-column: 1 / 2;
+        }
         .project-filter {
             margin-bottom: 0rem;
+            grid-column: 2 / -1;
         }
         .project-list-names {
             display: none;
@@ -283,7 +263,7 @@
 }
 .project-item.is-inactive,
 .work-item.is-inactive {
-    opacity: 0.4;
+    opacity: 0.2;
     pointer-events: none;
 }
 .project-list-names {

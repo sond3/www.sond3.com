@@ -1,0 +1,22 @@
+year: 2019
+client:
+  - Ameneiros Rey
+categories: [web, desarrollo]
+photos_layout: has-half big-first
+web: https://www.ameneirosrey.com
+cover: /img/projects/web-ameneiros/ameneiros-rey-web-portada-s.webp
+photos:
+  - src: /img/projects/web-ameneiros/ameneiros-rey-web-portada.webp
+    alt_gl: Web de Ameneiros Rey
+    alt_es: Web de Ameneiros Rey
+    alt_en: Ameneiros Rey website
+
+  - src: /img/projects/web-ameneiros/ameneiros-rey-web-proyectos.webp
+    alt_gl: Web de Ameneiros Rey
+    alt_es: Web de Ameneiros Rey
+    alt_en: Ameneiros Rey website
+
+  - src: /img/projects/web-ameneiros/ameneiros-rey-web-proyecto.webp
+    alt_gl: Web de Ameneiros Rey
+    alt_es: Web de Ameneiros Rey
+    alt_en: Ameneiros Rey website

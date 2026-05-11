@@ -21,6 +21,9 @@
     }
     .logo {
         font-family: "Geist", sans-serif;
+        /* hacer texto con lineas */
+        /* color: transparent;
+        -webkit-text-stroke: 6px var(--color-fg); */
     }
     h3,
     address {

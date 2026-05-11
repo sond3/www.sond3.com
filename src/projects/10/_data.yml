@@ -3,7 +3,7 @@ client:
   - Antón Gandoy
 categories: [web, desarrollo]
 web: https://www.garq.es/
-cover: /img/projects/web-garq/garq-arquitectura-1.webp
+cover: /img/projects/web-garq/garq-arquitectura-1-s.webp
 photos:
   - src: /img/projects/web-garq/garq.webm
     alt_gl: Web de garq arquitectura

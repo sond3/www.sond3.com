@@ -3,7 +3,7 @@ client:
   - Museo do Castro de Viladonga
 categories: [grafica, editorial, identidad]
 photos_layout: has-half  big-first
-cover: /img/projects/folleto-azabache/folleto-1.webp
+cover: /img/projects/folleto-azabache/folleto-1-s.webp
 photos:
   - src: /img/projects/folleto-azabache/folleto-2.webp
     alt_gl: Folleto da exposición O acibeche no mundo antigo
