@@ -1,8 +1,9 @@
 year: 2024
 client: 
-  - Gobierno de España - Ministerio de Cultura
+  - Gobierno de España, Ministerio de Cultura
 categories: [editorial]
-cover: /img/projects/europa-creativa/01-s.webp
+cover: /img/projects/europa-creativa/08-s.webp
+photos_layout: has-half ar-16-12
 photos:
   - src: /img/projects/europa-creativa/01-l.webp
     alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
@@ -35,6 +36,11 @@ photos:
     alt_en: Europa Creativa results report 2021 / 2022. 
 
   - src: /img/projects/europa-creativa/07-l.webp
+    alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
+    alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
+    alt_en: Europa Creativa results report 2021 / 2022. 
+
+  - src: /img/projects/europa-creativa/08-l.webp
     alt_gl: Informe de resultados Europa Creativa ano 2021 / 2022.
     alt_es: Informe de resultados Europa Creativa año 2021 / 2022.
     alt_en: Europa Creativa results report 2021 / 2022. 

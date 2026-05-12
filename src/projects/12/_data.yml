@@ -3,7 +3,7 @@ categories: [grafica]
 web: https://www.instagram.com/postersxgazabyadgfad
 client: 
   - Sond3
-photos_layout: has-half
+photos_layout: has-half big-first
 cover: /img/projects/poster-gaza/poster-gaza-01-s.webp
 photos:
   - src: /img/projects/poster-gaza/poster-gaza-01.webp

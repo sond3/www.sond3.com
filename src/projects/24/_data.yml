@@ -1,0 +1,16 @@
+year: 2010
+client:
+  - Universidad de Santiago de Compostela - Escuela Politécnica Superior de Ingeniería. Asociación Gallega de Investigadores para el Desarrollo Rural
+categories: [editorial]
+cover: /img/projects/rural/spanish-1-l.webp
+photos_layout: has-half
+photos:
+  - src: /img/projects/rural/spanish-1.webp
+    alt_gl: Spanish Journal of Rural Development
+    alt_es: Spanish Journal of Rural Development
+    alt_en: Spanish Journal of Rural Development
+
+  - src: /img/projects/rural/spanish-2.jpg
+    alt_gl: Spanish Journal of Rural Development
+    alt_es: Spanish Journal of Rural Development
+    alt_en: Spanish Journal of Rural Development
