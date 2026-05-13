@@ -1,0 +1,27 @@
+year: 2023
+client:
+  - CEL - Confederación de empresarios de Lugo
+categories: [desarrollo, web]
+cover: /img/projects/canal-etico/canal-etico-s.webp
+photos_layout: has-half
+web: https://canaletico.cel.es
+photos:
+  - src: /img/projects/canal-etico/canal-etico.webp
+    alt_gl: Canal Ético
+    alt_es: Canal Ético
+    alt_en: Canal Ético
+
+  - src: /img/projects/canal-etico/canal-etico-denuncia.webp
+    alt_gl: Canal Ético — formulario de denuncia
+    alt_es: Canal Ético — formulario de denuncia
+    alt_en: Canal Ético — report form
+
+  - src: /img/projects/canal-etico/canal-etico-mis-denuncias.webp
+    alt_gl: Canal Ético — as miñas denuncias
+    alt_es: Canal Ético — mis denuncias
+    alt_en: Canal Ético — my reports
+
+  - src: /img/projects/canal-etico/canal-etico-mis-denuncias-detalle.webp
+    alt_gl: Canal Ético — detalle de denuncia
+    alt_es: Canal Ético — detalle de denuncia
+    alt_en: Canal Ético — report detail
