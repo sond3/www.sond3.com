@@ -33,6 +33,9 @@
             var s = localStorage.getItem('theme');
             var t = s || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.dataset.theme = t;
+            if (localStorage.getItem('project-layout') !== 'as-list') {
+                document.documentElement.dataset.layoutAsImg = '';
+            }
         })();
     </script>
 </head>

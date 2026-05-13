@@ -13,7 +13,7 @@ function setLayout(isImg) {
     list.classList.toggle("as-img", isImg);
     btnImg?.classList.toggle("is-active", isImg);
     btnList?.classList.toggle("is-active", !isImg);
-    localStorage.setItem(STORAGE_KEY, isImg ? "as-img" : "");
+    localStorage.setItem(STORAGE_KEY, isImg ? "as-img" : "as-list");
 }
 
 function setLayoutWithTransition(isImg) {
@@ -25,7 +25,8 @@ function setLayoutWithTransition(isImg) {
 }
 
 if (list) {
-    setLayout(localStorage.getItem(STORAGE_KEY) === "as-img");
+    delete document.documentElement.dataset.layoutAsImg;
+    setLayout(localStorage.getItem(STORAGE_KEY) !== "as-list");
 
     btnImg?.addEventListener("click", () => setLayoutWithTransition(true));
     btnList?.addEventListener("click", () => setLayoutWithTransition(false));
