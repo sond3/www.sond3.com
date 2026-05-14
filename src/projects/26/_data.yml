@@ -1,0 +1,31 @@
+year: 2019
+client:
+  - Auditorio de Galicia
+categories: [web, desarrollo]
+photos_layout: has-half big-first
+cover: /img/projects/auditorio-galicia/01-auditorio.webp
+photos:
+  - src: /img/projects/auditorio-galicia/01-auditorio.webp
+    alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
+    alt_es: XI Premio Auditorio de Galicia para Jóvenes Artistas 2019
+    alt_en: XI Premio Auditorio de Galicia for Young Artists 2019
+
+  - src: /img/projects/auditorio-galicia/02-auditorio.webp
+    alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
+    alt_es: XI Premio Auditorio de Galicia para Jóvenes Artistas 2019
+    alt_en: XI Premio Auditorio de Galicia for Young Artists 2019
+
+  - src: /img/projects/auditorio-galicia/03-auditorio.webp
+    alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
+    alt_es: XI Premio Auditorio de Galicia para Jóvenes Artistas 2019
+    alt_en: XI Premio Auditorio de Galicia for Young Artists 2019
+
+  - src: /img/projects/auditorio-galicia/04-auditorio.webp
+    alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
+    alt_es: XI Premio Auditorio de Galicia para Jóvenes Artistas 2019
+    alt_en: XI Premio Auditorio de Galicia for Young Artists 2019
+
+  - src: /img/projects/auditorio-galicia/05-auditorio.webp
+    alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
+    alt_es: XI Premio Auditorio de Galicia para Jóvenes Artistas 2019
+    alt_en: XI Premio Auditorio de Galicia for Young Artists 2019

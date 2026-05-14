@@ -119,6 +119,9 @@
     }
     .project-item-title {
         line-height: 130%;
+        .project-item-title-colab {
+            color: var(--color-fg)  ;
+        }
     }
     .project-item-client {
         grid-column: 4 / 8;

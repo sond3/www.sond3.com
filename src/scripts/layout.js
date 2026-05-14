@@ -31,3 +31,11 @@ if (list) {
     btnImg?.addEventListener("click", () => setLayoutWithTransition(true));
     btnList?.addEventListener("click", () => setLayoutWithTransition(false));
 }
+
+// Envolver texto entre paréntesis en project-item-title con un <span>
+document.querySelectorAll(".project-item-title").forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(
+        /(\([^)]+\))/g,
+        '<span class="project-item-title-colab">$1</span>'
+    );
+});
