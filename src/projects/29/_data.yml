@@ -3,7 +3,7 @@ client:
   - Amorodo
 categories: [identidad, grafica]
 cover: /img/projects/amorodo/mermeladas-amorodo.webp
-photos_layout: has-half ar-16-12 big-first
+photos_layout:  ar-16-12 big-first has-half
 photos:
   - src: /img/projects/amorodo/mermeladas-amorodo.webp
     alt_gl: Mermeladas Amorodo — identidade e gráfica
@@ -15,18 +15,22 @@ photos:
     alt_es: Mermeladas Amorodo — gráfica aplicada
     alt_en: Mermeladas Amorodo — applied graphics
 
-
-  - src: /img/projects/amorodo/caja-1.jpg
+  - src: /img/projects/amorodo/EXPO.webp
     alt_gl: Mermeladas Amorodo — caixa de produto
     alt_es: Mermeladas Amorodo — caja de producto
     alt_en: Mermeladas Amorodo — product box
 
-  - src: /img/projects/amorodo/caja-2.jpg
+  - src: /img/projects/amorodo/caja-1.webp
     alt_gl: Mermeladas Amorodo — caixa de produto
     alt_es: Mermeladas Amorodo — caja de producto
     alt_en: Mermeladas Amorodo — product box
 
-  - src: /img/projects/amorodo/caja-3.jpg
+  # - src: /img/projects/amorodo/caja-2.webp
+  #   alt_gl: Mermeladas Amorodo — caixa de produto
+  #   alt_es: Mermeladas Amorodo — caja de producto
+  #   alt_en: Mermeladas Amorodo — product box
+
+  - src: /img/projects/amorodo/caja-3.webp
     alt_gl: Mermeladas Amorodo — caixa de produto
     alt_es: Mermeladas Amorodo — caja de producto
     alt_en: Mermeladas Amorodo — product box
