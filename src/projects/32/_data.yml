@@ -1,0 +1,47 @@
+year: 2020
+client:
+  - Bicame cosmética natural
+categories: [identidad, grafica]
+photos_layout: big-first
+cover: /img/projects/bicame/bicame-s.webp
+photos:
+  - src: /img/projects/bicame/bicame.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+  - src: /img/projects/bicame/bicame-2.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+  - src: /img/projects/bicame/bicame-3.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+  - src: /img/projects/bicame/bicame-4.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+  - src: /img/projects/bicame/bicame-5.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+
+  - src: /img/projects/bicame/bicame-1.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics
+
+  # - src: /img/projects/bicame/bicame-6.webp
+  #   alt_gl: Bicame cosmética Natural — identidade e gráfica
+  #   alt_es: Bicame cosmética Natural — identidad y gráfica
+  #   alt_en: Bicame cosmética Natural — identity and graphics
+
+  - src: /img/projects/bicame/bicame-7.webp
+    alt_gl: Bicame cosmética Natural — identidade e gráfica
+    alt_es: Bicame cosmética Natural — identidad y gráfica
+    alt_en: Bicame cosmética Natural — identity and graphics

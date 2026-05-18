@@ -1,0 +1,21 @@
+year: 2012
+client:
+  - Sond3
+categories: [grafica]
+cover: /img/projects/calendario/01.webp
+photos_layout: big-first has-half
+photos:
+  - src: /img/projects/calendario/01.webp
+    alt_gl: Calendario Giro 2012 — proxecto persoal do estudio
+    alt_es: Calendario Giro 2012 — proyecto personal del estudio
+    alt_en: Calendario Giro 2012 — personal studio project
+
+  - src: /img/projects/calendario/02.webp
+    alt_gl: Calendario Giro 2012 — proxecto persoal do estudio
+    alt_es: Calendario Giro 2012 — proyecto personal del estudio
+    alt_en: Calendario Giro 2012 — personal studio project
+
+  - src: /img/projects/calendario/03.webp
+    alt_gl: Calendario Giro 2012 — proxecto persoal do estudio
+    alt_es: Calendario Giro 2012 — proyecto personal del estudio
+    alt_en: Calendario Giro 2012 — personal studio project

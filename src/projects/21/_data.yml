@@ -4,14 +4,20 @@ client:
 categories: [grafica, identidad]
 cover: /img/projects/evicc/identidad-evicc-s.webp
 
-photos_layout: has-half ar-16-12
+photos_layout: has-half ar-16-12 big-first
 photos:
   - src: /img/projects/evicc/identidad-evicc.webp
     alt_gl: Identidade EVICC
     alt_es: Identidad EVICC
     alt_en: EVICC identity
-
+  
   - src: /img/projects/evicc/evicc-2.webp
+    alt_gl: EVICC solid surface
+    alt_es: EVICC solid surface
+    alt_en: EVICC solid surface
+
+
+  - src: /img/projects/evicc/evicc-1.webp
     alt_gl: EVICC solid surface
     alt_es: EVICC solid surface
     alt_en: EVICC solid surface
