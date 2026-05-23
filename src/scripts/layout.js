@@ -32,6 +32,36 @@ if (list) {
     btnList?.addEventListener("click", () => setLayoutWithTransition(false));
 }
 
+// Hover preview a nivel de body para evitar problemas de stacking context
+if (list) {
+    const previewEl = document.createElement('div');
+    previewEl.className = 'project-hover-preview';
+    document.body.appendChild(previewEl);
+
+    list.querySelectorAll('.project-item').forEach(item => {
+        const media = item.querySelector('img, video');
+        if (!media) return;
+
+        item.addEventListener('mouseenter', () => {
+            if (list.classList.contains('as-img')) return;
+            previewEl.innerHTML = '';
+            const clone = media.cloneNode(true);
+            if (clone.tagName === 'VIDEO') {
+                clone.autoplay = true;
+                clone.loop = true;
+                clone.muted = true;
+                clone.playsInline = true;
+            }
+            previewEl.appendChild(clone);
+            previewEl.classList.add('is-visible');
+        });
+
+        item.addEventListener('mouseleave', () => {
+            previewEl.classList.remove('is-visible');
+        });
+    });
+}
+
 // Envolver texto entre paréntesis en project-item-title con un <span>
 document.querySelectorAll(".project-item-title").forEach((el) => {
     el.innerHTML = el.innerHTML.replace(

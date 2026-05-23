@@ -56,7 +56,7 @@ layout: layouts/default.vto
     {{ if photos && photos.length }}
     <div class="project-photos {{ photos_layout }}">
         {{ for photo of photos }}
-        <figure>
+        <figure{{ if photo.class }} class="{{ photo.class }}"{{ /if }}>
             {{ if photo.src.endsWith('.webm') || photo.src.endsWith('.mp4') }}
             <video src="{{ photo.src }}" autoplay loop muted playsinline preload="none"></video>
             {{ else }}

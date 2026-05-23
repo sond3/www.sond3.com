@@ -3,18 +3,20 @@ client:
   - Facultade de Xeografía e Historia - Universidade de Santiago de Compostela
 categories: [web, desarrollo]
 cover: /img/projects/web-ideahs/404.webm
-photos_layout: has-half
+# photos_layout: big-first
 web: https://ideahs.es
 photos:
-  - src: /img/projects/web-ideahs/team.webm
-    alt_gl: IdeaHS — web 2025
-    alt_es: IdeaHS — web 2025
-    alt_en: IdeaHS — web 2025
-
   - src: /img/projects/web-ideahs/404.webm
     alt_gl: IdeaHS — web 2025
     alt_es: IdeaHS — web 2025
     alt_en: IdeaHS — web 2025
+    class: has-half ar-16-12
+
+  - src: /img/projects/web-ideahs/team.webm
+    alt_gl: IdeaHS — web 2025
+    alt_es: IdeaHS — web 2025
+    alt_en: IdeaHS — web 2025
+    class: has-half ar-16-12
 
   - src: /img/projects/web-ideahs/03.webp
     alt_gl: IdeaHS — web 2025
@@ -46,3 +48,15 @@ photos:
     alt_gl: IdeaHS — web 2025
     alt_es: IdeaHS — web 2025
     alt_en: IdeaHS — web 2025
+
+  - src: /img/projects/web-ideahs/08.webp
+    alt_gl: IdeaHS — web 2025
+    alt_es: IdeaHS — web 2025
+    alt_en: IdeaHS — web 2025
+    class: has-half 
+
+  - src: /img/projects/web-ideahs/07.webp
+    alt_gl: IdeaHS — web 2025
+    alt_es: IdeaHS — web 2025
+    alt_en: IdeaHS — web 2025
+    class: has-half 

@@ -36,6 +36,8 @@
                 position: relative;
                 display: block;
                 width: 100%;
+                aspect-ratio: 4 / 5;
+                object-fit: cover;
                 /* filter: grayscale(1); */
                 /* opacity: .8; */
                 transition: filter 0.4s ease, opacity 0.4s ease;
@@ -141,18 +143,6 @@
     video,
     img {
         display: none;
-            position: fixed;
-            z-index: -1;
-            width: 250px;
-            object-fit: cover;
-            aspect-ratio: 4 / 5;
-            inset: 50% auto auto 50%;
-            transform: translate(-50%, -50%);
-            /* filter: grayscale(1); */
-            /* mix-blend-mode: overlay; */
-            pointer-events: none;
-                /* filter: grayscale(1);
-                opacity: .2; */
     }
     .project-item-meta {
         grid-column: 1 / -1;
@@ -172,9 +162,8 @@
         }
     }
     /* border-block: 1px solid transparent; */
-    @media (hover: hover) and (pointer: fine) {
+    /* @media (hover: hover) and (pointer: fine) {
         &:hover {
-            /* border-block-color: color-mix(in srgb, var(--color-fg) 100%, var(--color-bg) 0%); */
             img,
             video {
                 display: block;
@@ -182,6 +171,29 @@
             .project-item-meta {
                 color: color-mix(in srgb, var(--color-fg) 120%, var(--color-bg) 0%);
             }
+        }
+    } */
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .project-hover-preview {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        width: 400px;
+        pointer-events: none;
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%);
+        &.is-visible {
+            display: block;
+        }
+        img,
+        video {
+            display: block;
+            width: 100%;
+            /* aspect-ratio: 4 / 5;
+            object-fit: cover; */
         }
     }
 }
@@ -487,6 +499,24 @@
             @media (--until-mobile) {
                 grid-column: span 12;
             }
+        }
+    }
+    figure {
+        &.ar-16-12 {
+            img,video {
+                aspect-ratio: 16/12;
+                object-fit: cover;
+            }
+        }
+        &.full-width {
+            grid-column: span 12;
+            img, video {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &.has-half {
+                grid-column: span 6;
         }
     }
 }
