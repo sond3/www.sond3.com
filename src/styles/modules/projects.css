@@ -162,17 +162,13 @@
         }
     }
     /* border-block: 1px solid transparent; */
-    /* @media (hover: hover) and (pointer: fine) {
+    @media (hover: hover) and (pointer: fine) {
         &:hover {
-            img,
-            video {
-                display: block;
-            }
             .project-item-meta {
                 color: color-mix(in srgb, var(--color-fg) 120%, var(--color-bg) 0%);
             }
         }
-    } */
+    }
 
 }
 
