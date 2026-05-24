@@ -12,3 +12,5 @@ description: Portfolio website for garq arquitectura
 For over 20 years, Antón Gandoy has been developing architecture projects across Galicia.
 
 With the goal of building a digital repository of his past and future work, we designed a dynamic portfolio with a rationalist approach — a clear, structured space to explore his projects.
+
+Selected for the [From Spain with Design](https://fswd.es/en/project/?id=2261) project.
