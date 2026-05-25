@@ -8,7 +8,7 @@ keywords: design, graphic, development, web, programming, identity, digital, cor
 description: "we are a studio that designs and develops graphic communication projects and digital products advocating for honest, ethical and responsible design"
 ---
 
-{{ set projects = search.pages("lang=en type=project", "year=desc") }}
+{{ set projects = search.pages("lang=en type=project", "year=desc month=desc") }}
 <section class="work-list">
     <ul class="project-filter" aria-label="{{ nav[lang].meta_categories }}">
         {{ for cat of Object.keys(nav[lang].categories) }}

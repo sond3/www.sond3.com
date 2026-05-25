@@ -1,4 +1,5 @@
 year: 2025
+month: 11
 client: 
   - Museo do Castro de Viladonga
   - Museo Universitario Domus do Mitreo
@@ -6,11 +7,13 @@ categories: [grafica, identidad]
 cover: /img/projects/muralla/muralla.webm
 photos:
   - src: /img/projects/muralla/01-l.webp
+    class: has-half
     alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
     alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
     alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
   - src: /img/projects/muralla/02-l.webp
+    class: has-half
     alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
     alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
     alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
@@ -31,11 +34,13 @@ photos:
     alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
   - src: /img/projects/muralla/05-l.webp
+    class: has-half
     alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
     alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
     alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site
 
   - src: /img/projects/muralla/06-l.webp
+    class: has-half
     alt_gl: Exposición dos 25 anos da declaración da Muralla de Lugo Patrimonio da Humanidade
     alt_es: Exposición de los 25 años de la declaración de la Muralla de Lugo Patrimonio de la Humanidad
     alt_en: Exhibition on the 25th anniversary of the declaration of the Lugo Wall as a World Heritage Site

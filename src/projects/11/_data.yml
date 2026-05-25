@@ -1,4 +1,5 @@
 year: 2025
+month: 9
 client: 
   - Universidade de Santiago de Compostela
 categories: [web, desarrollo]
@@ -7,11 +8,13 @@ cover: /img/projects/web-permoria/permoria-6.jpg
 photos:
 
   - src: /img/projects/web-permoria/permoria-video2.webm
+    class: has-half
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
   
   - src: /img/projects/web-permoria/permoria-video.webm
+    class: has-half
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
@@ -21,15 +24,15 @@ photos:
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-2.jpg
-    alt_gl: Web de Permoria
-    alt_es: Web de Permoria
-    alt_en: Permoria website
+  # - src: /img/projects/web-permoria/permoria-2.jpg
+  #   alt_gl: Web de Permoria
+  #   alt_es: Web de Permoria
+  #   alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-3.jpg
-    alt_gl: Web de Permoria
-    alt_es: Web de Permoria
-    alt_en: Permoria website
+  # - src: /img/projects/web-permoria/permoria-3.jpg
+  #   alt_gl: Web de Permoria
+  #   alt_es: Web de Permoria
+  #   alt_en: Permoria website
 
   - src: /img/projects/web-permoria/permoria-4.jpg
     alt_gl: Web de Permoria

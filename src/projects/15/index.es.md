@@ -1,13 +1,13 @@
 ---
 lang: es
 id: cartel-azabache
-url: /es/cartel-azabache/
-title: Carteles de la exposición El azabache en el mundo antiguo
+url: /es/exposicion-azabache/
+title: Exposición El azabache en el mundo antiguo
 layout: layouts/project.vto
-description: Carteles de la exposición El azabache en el mundo antiguo
+description: Exposición El azabache en el mundo antiguo
 ---
 
-Carteles para la exposición «El azabache en el mundo antiguo — Una aproximación desde el Castro de Viladonga»
+Gráfica para la exposición «El azabache en el mundo antiguo — Una aproximación desde el Castro de Viladonga»
 
 - **Formato:** 50×70cm
 - **Papel:** offset superior 120gr
