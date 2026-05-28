@@ -2,6 +2,9 @@ es:
   menu_project: Estudio
   menu_work: Proyectos
   meta_project: Proyecto
+  related_projects: "Más proyectos de"
+  nav_prev: "← Anterior"
+  nav_next: "Siguiente →"
   meta_year: Año
   meta_client: Cliente
   meta_categories: Categorías
@@ -18,6 +21,9 @@ gl:
   menu_project: Estudio
   menu_work: Proxectos
   meta_project: Proxecto
+  related_projects: "Máis proxectos de"
+  nav_prev: "← Anterior"
+  nav_next: "Seguinte →"
   meta_year: Ano
   meta_client: Cliente
   meta_categories: Categorías
@@ -34,6 +40,9 @@ en:
   menu_project: Studio
   menu_work: Projects
   meta_project: Project
+  related_projects: "More projects on"
+  nav_prev: "← Previous"
+  nav_next: "Next →"
   meta_year: Year
   meta_client: Client
   meta_categories: Categories

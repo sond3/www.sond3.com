@@ -531,6 +531,12 @@
         &.has-half {
                 grid-column: span 6;
         }
+        &.has-third {
+                grid-column: span 4;
+        }
+        &.has-four {
+                grid-column: span 3;
+        }
     }
 }
 
@@ -539,4 +545,103 @@
         animation-duration: 800ms;
         animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
     }
+}
+
+/* Related projects: always forced to list/text view */
+.project-list.related-projects {
+    grid-template-columns: repeat(12, 1fr);
+    /* margin-block-start: 10vh; */
+    .project-list-names {
+        display: grid;
+        li:nth-child(1) { grid-column: 4 / 11; 
+            @media (--until-mobile) {
+                grid-column: 1 / 11;
+            }
+        }
+        li:nth-child(2) { display: none; }
+        li:nth-child(3) { display: none; }
+        li:nth-child(4) { grid-column: 11 / -1; text-align: right; }
+    }
+
+    .project-item {
+        position: static;
+        display: grid;
+        grid-column: 4 / -1;
+        @media (--until-mobile) {
+            grid-column: 1 / -1;
+            margin: 0;
+        }
+        margin-top: 0;
+
+        > a {
+            padding-block: .25rem;
+        }
+
+        img, video {
+            display: none;
+        }
+
+        .project-item-title {
+            display: block;
+            grid-column: 1 / 8;
+            font-size: var(--fs-body);
+        }
+
+        /* .project-item-client {
+            display: block;
+            grid-column: 5 / 9;
+        } */
+
+        .project-item-categories,
+        .project-item-client {
+            display: none;
+        }
+
+        .project-item-year {
+            display: block;
+            grid-column: 8 / -1;
+            text-align: right;
+        }
+    }
+}
+
+.nav-prev-next {
+    border-block: 1px solid color-mix(in srgb, var(--color-fg) 20%, var(--color-bg) 80%);
+    display: flex;
+    margin-block-start: 10vh;
+    margin-block-end: 5vh;
+    > * {
+        flex: 1;
+        &:first-child {
+            border-inline-end: 1px solid color-mix(in srgb, var(--color-fg) 20%, var(--color-bg) 80%);
+        }
+    }
+    /* .prev {
+        text-align: left;
+    }
+    .next {
+        text-align: right;
+    } */
+    a {
+        text-align: center;
+        padding:  1rem;
+        color: var(--color-fg);
+        display: block;
+        font-size: clamp(1.5rem, calc(2.5vw + 1vw), 1.5rem);
+        line-height: 120%;
+        font-weight: 650;
+        aspect-ratio: 16 / 9;
+        align-content: center;
+        span {
+            font-size: var(--fs-caption);
+            font-family: "GeistMono", monospace;
+            margin-bottom: .25rem;
+            display: block;
+            font-weight: 400;
+        }
+        &:hover {
+            background-color: var(--color-fg);
+            color: var(--color-bg);
+        }
+    };
 }

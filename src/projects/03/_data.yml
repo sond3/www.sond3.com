@@ -15,28 +15,34 @@ photos:
     alt_es: Identidad y gráfica aplicada permoria
     alt_en: Identity and graphic for permoria
 
-  - src: /img/projects/permoria-grafica/permoria-11.webp
-    alt_gl: Identidade e gráfica aplicada permoria
-    alt_es: Identidad y gráfica aplicada permoria
-    alt_en: Identity and graphic for permoria
-
-  - src: /img/projects/permoria-grafica/permoria-12.webp
-    alt_gl: Identidade e gráfica aplicada permoria
-    alt_es: Identidad y gráfica aplicada permoria
-    alt_en: Identity and graphic for permoria
-
   - src: /img/projects/permoria-grafica/permoria-15.webm
     alt_gl: Identidade e gráfica aplicada permoria
     alt_es: Identidad y gráfica aplicada permoria
     alt_en: Identity and graphic for permoria
 
-  - src: /img/projects/permoria-grafica/permoria-13.webp
+
+  - src: /img/projects/permoria-grafica/permoria-11.webp
+    class: has-half
     alt_gl: Identidade e gráfica aplicada permoria
     alt_es: Identidad y gráfica aplicada permoria
     alt_en: Identity and graphic for permoria
+
+  - src: /img/projects/permoria-grafica/permoria-12.webp
+    class: has-half
+    alt_gl: Identidade e gráfica aplicada permoria
+    alt_es: Identidad y gráfica aplicada permoria
+    alt_en: Identity and graphic for permoria
+
+  - src: /img/projects/permoria-grafica/permoria-13.webp
+    class: has-half
+    alt_gl: Identidade e gráfica aplicada permoria
+    alt_es: Identidad y gráfica aplicada permoria
+    alt_en: Identity and graphic for permoria
+
 
   - src: /img/projects/permoria-grafica/permoria-14.webp
+    class: has-half
     alt_gl: Identidade e gráfica aplicada permoria
     alt_es: Identidad y gráfica aplicada permoria
     alt_en: Identity and graphic for permoria
-
+  

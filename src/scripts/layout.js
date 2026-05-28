@@ -1,6 +1,10 @@
 const STORAGE_KEY = "project-layout";
 
-const list = document.querySelector(".project-list");
+// Always remove the attribute set by the inline script in <head>
+// (on detail pages there's no main list, but it still needs to be cleaned up)
+delete document.documentElement.dataset.layoutAsImg;
+
+const list = document.querySelector(".project-list:not(.related-projects)");
 const btnImg = document.querySelector(".change-layout-as-img");
 const btnList = document.querySelector(".change-layout-as-list");
 
@@ -25,7 +29,6 @@ function setLayoutWithTransition(isImg) {
 }
 
 if (list) {
-    delete document.documentElement.dataset.layoutAsImg;
     setLayout(localStorage.getItem(STORAGE_KEY) !== "as-list");
 
     btnImg?.addEventListener("click", () => setLayoutWithTransition(true));
@@ -33,17 +36,17 @@ if (list) {
 }
 
 // Hover preview a nivel de body para evitar problemas de stacking context
-if (list) {
-    const previewEl = document.createElement('div');
-    previewEl.className = 'project-hover-preview';
-    document.body.appendChild(previewEl);
+const previewEl = document.createElement('div');
+previewEl.className = 'project-hover-preview';
+document.body.appendChild(previewEl);
 
-    list.querySelectorAll('.project-item').forEach(item => {
+function attachHoverPreview(container, alwaysShow = false) {
+    container.querySelectorAll('.project-item').forEach(item => {
         const media = item.querySelector('img, video');
         if (!media) return;
 
         item.addEventListener('mouseenter', () => {
-            if (list.classList.contains('as-img')) return;
+            if (!alwaysShow && container.classList.contains('as-img')) return;
             previewEl.innerHTML = '';
             const clone = media.cloneNode(true);
             if (clone.tagName === 'VIDEO') {
@@ -60,6 +63,15 @@ if (list) {
             previewEl.classList.remove('is-visible');
         });
     });
+}
+
+if (list) {
+    attachHoverPreview(list);
+}
+
+const relatedList = document.querySelector('.project-list.related-projects');
+if (relatedList) {
+    attachHoverPreview(relatedList, true);
 }
 
 // Envolver texto entre paréntesis en project-item-title con un <span>
