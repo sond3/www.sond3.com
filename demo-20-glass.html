@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Son de tres · 2006–2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; background: #060608; overflow: hidden; }
+canvas { position: fixed; inset: 0; }
+footer {
+    position: fixed;
+    inset: auto 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 3s 0.8s;
+}
+footer.show { opacity: 1; }
+footer span {
+    color: rgba(255,252,245,0.2);
+    font: 500 0.58rem/1 -apple-system, "Helvetica Neue", sans-serif;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+(function(){
+
+const VS = `
+attribute vec2 a_pos;
+varying vec2 v_uv;
+void main(){
+    v_uv = a_pos * 0.5 + 0.5;
+    gl_Position = vec4(a_pos, 0.0, 1.0);
+}`;
+
+const FS = `
+precision highp float;
+varying vec2 v_uv;
+uniform float u_t;
+uniform vec2  u_res;
+uniform vec2  u_mouse;
+
+// ── Simplex noise 2D ─────────────────────────────────────────────────
+vec3 mod289(vec3 x){ return x - floor(x*(1./289.))*289.; }
+vec2 mod289(vec2 x){ return x - floor(x*(1./289.))*289.; }
+vec3 permute(vec3 x){ return mod289(((x*34.)+1.)*x); }
+float snoise(vec2 v){
+    const vec4 C = vec4(0.211324865,0.366025403,-0.577350269,0.024390243);
+    vec2 i  = floor(v + dot(v, C.yy));
+    vec2 x0 = v - i + dot(i, C.xx);
+    vec2 i1 = (x0.x > x0.y) ? vec2(1,0) : vec2(0,1);
+    vec4 x12 = x0.xyxy + C.xxzz; x12.xy -= i1;
+    i = mod289(i);
+    vec3 p = permute(permute(i.y + vec3(0,i1.y,1)) + i.x + vec3(0,i1.x,1));
+    vec3 m = max(0.5 - vec3(dot(x0,x0),dot(x12.xy,x12.xy),dot(x12.zw,x12.zw)), 0.);
+    m = m*m; m = m*m;
+    vec3 x2 = 2.*fract(p*C.www) - 1.;
+    vec3 h = abs(x2) - 0.5;
+    vec3 a0 = x2 - floor(x2+0.5);
+    m *= 1.79284291 - 0.85373472*(a0*a0+h*h);
+    vec3 g;
+    g.x  = a0.x *x0.x  + h.x *x0.y;
+    g.yz = a0.yz*x12.xz + h.yz*x12.yw;
+    return 130.*dot(m,g);
+}
+
+float fbm(vec2 p, float t){
+    float v = 0., a = 0.5;
+    // rotation 30 deg
+    mat2 R = mat2(0.866, 0.5, -0.5, 0.866);
+    for(int i = 0; i < 5; i++){
+        v += snoise(p + t * vec2(0.038, 0.024)) * a;
+        p  = R * p * 2.07 + vec2(1.3, 0.9);
+        a *= 0.48;
+    }
+    return v * 0.5 + 0.5;
+}
+
+// ── Topographic background ────────────────────────────────────────────
+vec3 background(vec2 p, float t){
+    // Single-level domain warp for organic field
+    float wx = snoise(p * 1.5 + vec2(0.0, t * 0.022));
+    float wy = snoise(p * 1.5 + vec2(4.1, t * 0.022));
+    vec2  w  = p + vec2(wx, wy) * 0.38;
+
+    float f  = fbm(w * 0.88, t);
+
+    // Primary contours (coarse elevation bands)
+    float c1  = fract(f * 7.0);
+    float lw1 = 0.032;
+    float l1  = 1. - smoothstep(0., lw1, min(c1, 1.-c1));
+
+    // Secondary contours (fine detail)
+    float c2  = fract(f * 24.0);
+    float lw2 = 0.013;
+    float l2  = (1. - smoothstep(0., lw2, min(c2, 1.-c2))) * 0.4;
+
+    float lines = clamp(l1 + l2, 0., 1.);
+
+    // Subtle warm-cool tint on lines (like aged print)
+    float tint  = fbm(p * 2.3 + 7.0, t * 0.25) * 0.14;
+    vec3 lineCol = vec3(0.72 + tint, 0.68, 0.63 - tint*0.4);
+
+    vec3 base = vec3(0.028, 0.025, 0.036);
+    return mix(base, lineCol * 0.20, lines);
+}
+
+void main(){
+    vec2 uv  = v_uv;
+    float ar = u_res.x / u_res.y;
+    float t  = u_t;
+
+    // Centered aspect-correct space
+    vec2 p = (uv - 0.5) * vec2(ar, 1.0);
+
+    // ── Mouse distortion ──────────────────────────────────────────────
+    vec2  mp    = (u_mouse - 0.5) * vec2(ar, 1.);
+    float md    = length(p - mp);
+    vec2  mDir  = md > 0.001 ? (p - mp) / md : vec2(0.);
+    float mInfl = exp(-md * md * 8.) * 0.030;
+
+    vec3 color = background(p + mDir * mInfl, t);
+
+    // ── Film grain ────────────────────────────────────────────────────
+    float grain = fract(sin(dot(uv * 800. + fract(t * 5.7), vec2(127.1, 311.7))) * 43758.5) - 0.5;
+    color += grain * 0.022;
+
+    // ── Vignette ─────────────────────────────────────────────────────
+    color *= smoothstep(1.0, 0.25, length(p * 0.92));
+
+    // ── Filmic tone + gamma ───────────────────────────────────────────
+    color = color / (color + 0.18);          // simple Reinhard shoulder
+    color = pow(clamp(color, 0., 1.), vec3(0.88));
+
+    gl_FragColor = vec4(color, 1.0);
+}`;
+
+// ── Boilerplate WebGL ─────────────────────────────────────────────────────
+const canvas = document.getElementById('c');
+const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+if (!gl){ document.body.style.background = '#000'; return; }
+
+let W, H;
+const mouse = { x: 0.5, y: 0.5 };
+
+function mkShader(type, src){
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    if(!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s));
+    return s;
+}
+const prog = gl.createProgram();
+gl.attachShader(prog, mkShader(gl.VERTEX_SHADER,   VS));
+gl.attachShader(prog, mkShader(gl.FRAGMENT_SHADER, FS));
+gl.linkProgram(prog);
+gl.useProgram(prog);
+
+const buf = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+const aPos = gl.getAttribLocation(prog, 'a_pos');
+gl.enableVertexAttribArray(aPos);
+gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+const uT     = gl.getUniformLocation(prog, 'u_t');
+const uRes   = gl.getUniformLocation(prog, 'u_res');
+const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+function resize(){
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width  = W;
+    canvas.height = H;
+    gl.viewport(0, 0, W, H);
+}
+
+let rt;
+window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
+window.addEventListener('pointermove', e => {
+    mouse.x =           e.clientX / W;
+    mouse.y = 1.0 - e.clientY / H;   // flip Y (WebGL origin bottom-left)
+});
+
+function loop(ms){
+    gl.uniform1f(uT,     ms / 1000);
+    gl.uniform2f(uRes,   W, H);
+    gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(loop);
+}
+
+document.fonts.ready.then(() => {
+    resize();
+    requestAnimationFrame(loop);
+    setTimeout(() => document.getElementById('ft').classList.add('show'), 400);
+});
+
+})();
+</script>
+</body>
+</html>
