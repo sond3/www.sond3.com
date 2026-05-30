@@ -20,6 +20,26 @@ photos:
     alt_es: Mermeladas Amorodo — gráfica aplicada
     alt_en: Mermeladas Amorodo — applied graphics
 
+
+  - src: /img/projects/amorodo/patron-1.webp
+    class: has-third
+    alt_gl: Mermeladas Amorodo — caixa de produto
+    alt_es: Mermeladas Amorodo — caja de producto
+    alt_en: Mermeladas Amorodo — product box
+
+  - src: /img/projects/amorodo/patron-2.webp
+    class: has-third
+    alt_gl: Mermeladas Amorodo — caixa de produto
+    alt_es: Mermeladas Amorodo — caja de producto
+    alt_en: Mermeladas Amorodo — product box
+
+  - src: /img/projects/amorodo/patron-3.webp
+    class: has-third
+    alt_gl: Mermeladas Amorodo — caixa de produto
+    alt_es: Mermeladas Amorodo — caja de producto
+    alt_en: Mermeladas Amorodo — product box
+
+
   - src: /img/projects/amorodo/caja-3.webp
     alt_gl: Mermeladas Amorodo — caixa de produto
     alt_es: Mermeladas Amorodo — caja de producto
@@ -47,7 +67,7 @@ photos:
   #   alt_gl: Mermeladas Amorodo — caixa de produto
   #   alt_es: Mermeladas Amorodo — caja de producto
   #   alt_en: Mermeladas Amorodo — product box
-  
+     
   - src: /img/projects/amorodo/EXPO.webp
     alt_gl: Mermeladas Amorodo — caixa de produto
     alt_es: Mermeladas Amorodo — caja de producto

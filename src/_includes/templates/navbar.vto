@@ -12,7 +12,8 @@
         </li>
     </ul>
     <div class="nav-secondary">
-        <span class="nav-year">2006 — 2026</span>
+        {{ set anniversaryPage = search.page("id=aniversario lang=" + lang) }}
+        <a href="{{ anniversaryPage.url }}" class="nav-year">{{ nav[lang].menu_anniversary }}</a>
         {{ set otherLangs = alternates |> filter((a) => a.lang !== lang) }}
         <ul class="nav-lang">
         {{ for i, alt of otherLangs }}

@@ -1,6 +1,7 @@
 es:
   menu_project: Estudio
   menu_work: Proyectos
+  menu_anniversary: "2006 — 2026"
   meta_project: Proyecto
   related_projects: "Más proyectos de"
   nav_prev: "← Anterior"
@@ -20,6 +21,7 @@ es:
 gl:
   menu_project: Estudio
   menu_work: Proxectos
+  menu_anniversary: "2006 — 2026"
   meta_project: Proxecto
   related_projects: "Máis proxectos de"
   nav_prev: "← Anterior"
@@ -39,6 +41,7 @@ gl:
 en:
   menu_project: Studio
   menu_work: Projects
+  menu_anniversary: "2006 — 2026"
   meta_project: Project
   related_projects: "More projects on"
   nav_prev: "← Previous"
