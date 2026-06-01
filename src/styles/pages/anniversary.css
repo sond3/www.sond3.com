@@ -9,7 +9,7 @@
     }
     h1 {
         /* visually hidden */
-        position: absolute;
+        /* position: absolute;
         width: 1px;
         height: 1px;
         padding: 0;
@@ -17,10 +17,19 @@
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
-        border: 0;
+        border: 0; */
+    font-size: 4.42cqi;
+    margin-left: 1rem;
+    letter-spacing: calc(-0.1% - .1cqi);
+    margin-block-start: .5rem;
+    margin-block-end: 2.5rem;
+    line-height: 100%;
     }
     figure {
         margin: 0;
+        &:last-child {
+         grid-column: 1 / 3;
+        }
     }
     .anniversary-photos {
         display: grid;
@@ -29,6 +38,18 @@
         padding-inline: 1rem;
         div {
             text-align: right;
+            /* empezar en la oprimera columna */
+            grid-column: 1 / 2;
+            padding-block: 1rem;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: var(--fs-caption);
+        font-family: "GeistMono", monospace;
+        &::after {
+            content: "↓";
+            display: block;
         }
     }
 }
