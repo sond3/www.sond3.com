@@ -13,10 +13,12 @@
     .profile-figure {
         grid-column: 1 / -1;
         margin: 0;
+        overflow: hidden;
+        aspect-ratio: 16/8;
         img {
             vertical-align: middle;
             width: 100%;
-            aspect-ratio: 16/8;
+            height: 120%;
             object-fit: cover;
             opacity: 0;
             transition: opacity 0.4s ease;

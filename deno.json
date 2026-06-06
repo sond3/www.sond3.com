@@ -37,7 +37,7 @@
     },
     "build": {
       "description": "Build the site for production",
-      "command": "deno task lume"
+      "command": "LUME_ENV=production deno task lume"
     },
     "serve": {
       "description": "Run and serve the site for development",

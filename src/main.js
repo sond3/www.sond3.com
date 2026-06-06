@@ -1,5 +1,9 @@
-import { initTheme } from "/scripts/theme.js";
-import "/scripts/layout.js";
+import { initTheme } from "./scripts/theme.js";
+import "./scripts/layout.js";
+import gsap from "npm:gsap";
+import { ScrollTrigger } from "npm:gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 initTheme();
 
@@ -44,4 +48,19 @@ filterBtns.forEach((btn) => {
         applyFilters();
     });
 });
+
+const profileFigure = document.querySelector(".profile-figure");
+if (profileFigure) {
+    const profileImg = profileFigure.querySelector("img");
+    gsap.to(profileImg, {
+        yPercent: -15,
+        ease: "none",
+        scrollTrigger: {
+            trigger: profileFigure,
+            start: "top 40%",
+            end: "bottom top",
+            scrub: true,
+        },
+    });
+}
 
