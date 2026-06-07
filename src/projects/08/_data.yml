@@ -9,6 +9,7 @@ photos:
     alt_gl: Cartel de Joe Alvez
     alt_es: Cartel de Joe Alvez
     alt_en: Joe Alvez poster
+    class: full-width
 
   - src: /img/projects/cartel-joe/cartel-joe-2.webp
     alt_gl: Cartel de Joe Alvez
