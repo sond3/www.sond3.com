@@ -1,5 +1,6 @@
 import { initTheme } from "./scripts/theme.js";
 import "./scripts/layout.js";
+import { initCredits } from "./scripts/credits.js";
 import gsap from "npm:gsap";
 import { ScrollTrigger } from "npm:gsap/ScrollTrigger";
 
@@ -48,6 +49,8 @@ filterBtns.forEach((btn) => {
         applyFilters();
     });
 });
+
+initCredits(gsap);
 
 const profileFigure = document.querySelector(".profile-figure");
 if (profileFigure) {
