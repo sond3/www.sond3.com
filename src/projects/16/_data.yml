@@ -1,0 +1,21 @@
+year: 2023
+client:
+  - Escola Politécnica Superior de Enxeñaría USC
+categories: [grafica]
+photos_layout: has-half big-first
+cover: /img/projects/cartel-master/cartel-master-ingenieria-montes-s.webp
+photos:
+  - src: /img/projects/cartel-master/cartel-master-ingenieria-montes.webp
+    alt_gl: Cartel do Máster en Enxeñaría de Montes da EPSE USC
+    alt_es: Cartel del Máster en Ingeniería de Montes de la EPSE USC
+    alt_en: Poster for the Master in Forest Engineering at EPSE USC
+
+  - src: /img/projects/cartel-master/cartel-master-ingenieria-montes-variantes.webp
+    alt_gl: Variantes do cartel do Máster en Enxeñaría de Montes
+    alt_es: Variantes del cartel del Máster en Ingeniería de Montes
+    alt_en: Poster variants for the Master in Forest Engineering
+
+  - src: /img/projects/cartel-master/cartel-master-ingenieria-montes-variantes-2.webp
+    alt_gl: Variantes do cartel do Máster en Enxeñaría de Montes
+    alt_es: Variantes del cartel del Máster en Ingeniería de Montes
+    alt_en: Poster variants for the Master in Forest Engineering

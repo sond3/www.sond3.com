@@ -1,7 +1,10 @@
-@import "css/fonts.css";
-@import "css/variables.css";
+@import "./styles/fonts.css";
+@import "./styles/variables.css";
+@import "./styles/common.css";
 
-@import "css/common.css";
-@import "css/modules/header.css";
-@import "css/modules/footer.css";
-@import "css/pages/default.css";
+@import "./styles/modules/header.css";
+@import "./styles/modules/projects.css";
+@import "./styles/modules/footer.css";
+
+@import "./styles/pages/info.css";
+@import "./styles/pages/anniversary.css";

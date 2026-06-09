@@ -1,0 +1,26 @@
+year: 2024
+client: 
+  - Joe Alvez
+categories: [web, desarrollo]
+web: https://joealvez.com
+cover: /img/projects/web-joe/joealvez-1-s.webp
+photos:
+  - src: /img/projects/web-joe/joealvez.webm
+    alt_gl: Web de Joe Alvez
+    alt_es: Web de Joe Alvez
+    alt_en: Joe Alvez website
+
+  - src: /img/projects/web-joe/joealvez-1.webp
+    alt_gl: Web de Joe Alvez
+    alt_es: Web de Joe Alvez
+    alt_en: Joe Alvez website
+
+  - src: /img/projects/web-joe/joealvez-2.webp
+    alt_gl: Web de Joe Alvez
+    alt_es: Web de Joe Alvez
+    alt_en: Joe Alvez website
+
+  - src: /img/projects/web-joe/joealvez-3.webp
+    alt_gl: Web de Joe Alvez
+    alt_es: Web de Joe Alvez
+    alt_en: Joe Alvez website

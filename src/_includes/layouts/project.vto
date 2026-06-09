@@ -1,0 +1,131 @@
+---
+layout: layouts/default.vto
+---
+
+<article class="project-detail">
+    <header class="project-header">
+        <h1>{{ title }}</h1>
+        <div class="project-meta">
+            <span class="project-client" aria-label="{{ nav[lang].meta_client }}">
+                {{ if Array.isArray(client) }}
+                    {{ client |> join(", ") }}
+                {{ else }}
+                    {{ client }}
+                {{ /if }}
+            </span>
+
+            {{# <ul>
+            {{ for cat of categories }}
+            <li class="tag">{{ nav[lang].categories[cat] || cat }}</li>
+            {{ /for }}
+            </ul> #}}
+
+            <time datetime="{{ year }}">{{ year }}</time>
+        </div>
+        {{ if web }}
+        <div class="project-web">
+            <a href="{{ web }}" target="_blank" rel="noopener">{{ web.replace(/^https?:\/\//, '') }}</a>
+        </div>
+        {{ /if }}
+        {{# <dl class="project-meta">
+            <div>
+                <dt>{{ nav[lang].meta_year }}</dt>
+                <dd>{{ year }}</dd>
+            </div>
+            <div>
+                <dt>{{ nav[lang].meta_client }}</dt>
+                <dd>
+                    {{ if Array.isArray(client) }}
+                        {{ client |> join(", ") }}
+                    {{ else }}
+                        {{ client }}
+                    {{ /if }}
+                </dd>
+            </div>
+            <div>
+                <dt>{{ nav[lang].meta_categories }}</dt>
+                <dd>
+                    {{ for cat of categories }}
+                    <span class="tag">{{ nav[lang].categories[cat] || cat }}</span>
+                    {{ /for }}
+                </dd>
+            </div>
+        </dl> #}}
+    </header>
+
+    {{ if photos && photos.length }}
+    <div class="project-photos {{ photos_layout }}">
+        {{ for photo of photos }}
+        <figure{{ if photo.class }} class="{{ photo.class }}"{{ /if }}>
+            {{ if photo.src.endsWith('.webm') || photo.src.endsWith('.mp4') }}
+            <video src="{{ photo.src }}" autoplay loop muted playsinline preload="none"></video>
+            {{ else }}
+            <img src="{{ photo.src }}" alt="{{ photo['alt_' + lang] }}" loading="lazy">
+            {{ /if }}
+        </figure>
+        {{ /for }}
+    </div>
+    {{ /if }}
+
+    <div class="project-body">
+        {{ content }}
+    </div>
+</article>
+
+{{ set allProjects = search.pages("lang=" + lang + " type=project", "year=desc month=desc") }}
+{{ set relatedProjects = allProjects.filter(p => p.url !== url && p.categories && p.categories.some(cat => categories.includes(cat))) }}
+{{ set currentIndex = allProjects.findIndex(p => p.url === url) }}
+{{ set prevProject = currentIndex > 0 ? allProjects[currentIndex - 1] : null }}
+{{ set nextProject = currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null }}
+
+<nav class="nav-prev-next">
+    <div class="prev">
+        {{ if prevProject }}
+        <a href="{{ prevProject.url }}"><span>{{ nav[lang].nav_prev }}</span>{{ prevProject.title }}</a>
+        {{ /if }}
+    </div>
+    <div class="next">
+        {{ if nextProject }}
+        <a href="{{ nextProject.url }}"><span>{{ nav[lang].nav_next }}</span>{{ nextProject.title }}</a>
+        {{ /if }}
+    </div>
+</nav>
+
+{{ if relatedProjects.length }}
+<section class="project-list related-projects">
+    {{# <ul class="project-list-options">
+        <li><button class="change-layout-as-img">Imaxe</button></li>
+        <li><button class="change-layout-as-list">Texto</button></li>
+    </ul> #}}
+    <ul class="project-list-names" aria-hidden="true">
+        <li>{{ nav[lang].related_projects }} {{ categories.map(cat => nav[lang].categories[cat] || cat).join(', ') }}</li>
+        <li>{{ nav[lang].meta_client }}</li>
+        <li>{{ nav[lang].meta_categories }}</li>
+        <li>{{ nav[lang].meta_year }}</li>
+    </ul>
+    {{ for project of relatedProjects }}
+    <article class="project-item" data-categories="{{ project.categories |> join(',') }}"{{ if project.cover }} style="--cover: url('{{ project.cover }}')"{{ /if }}>
+        <a href="{{ project.url }}">
+            {{ if project.cover }}
+            {{ if project.cover.endsWith('.webm') || project.cover.endsWith('.mp4') }}
+            <video src="{{ project.cover }}" autoplay loop muted playsinline></video>
+            {{ else }}
+            <img src="{{ project.cover }}" alt="{{ project.title }}">
+            {{ /if }}
+            {{ /if }}
+            <div class="project-item-meta">
+                <h2 class="project-item-title" aria-label="{{ nav[lang].meta_project }}">{{ project.title }}</h2>
+                <span class="project-item-client" aria-label="{{ nav[lang].meta_client }}">{{ project.client |> join(", ") }}</span>
+                <ul class="project-item-categories" aria-label="{{ nav[lang].meta_categories }}">
+                    {{ for cat of project.categories }}
+                    <li><span class="tag" data-category="{{ cat }}">{{ nav[lang].categories[cat] || cat }}</span></li>
+                    {{ /for }}
+                </ul>
+                <span class="project-item-year" aria-label="{{ nav[lang].meta_year }}">{{ project.year }}</span>
+            </div>
+        </a>
+    </article>
+    {{ /for }}
+</section>
+{{ /if }}
+

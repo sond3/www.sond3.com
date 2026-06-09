@@ -1,0 +1,22 @@
+year: 2026
+month: 2
+client:
+  - Ideahs — Universidade de Santiago de Compostela
+categories: [grafica, identidad]
+cover: /img/projects/ideahs-carteles/portada-s.webp
+photos_layout: has-half big-first
+photos:
+  - src: /img/projects/ideahs-carteles/03.webp
+    alt_gl: Ideahs — Sistema gráfico de carteis 2026
+    alt_es: Ideahs — Sistema gráfico de carteles 2026
+    alt_en: Ideahs — Poster design system 2026
+
+  - src: /img/projects/ideahs-carteles/01.webp
+    alt_gl: Ideahs — Sistema gráfico de carteis 2026
+    alt_es: Ideahs — Sistema gráfico de carteles 2026
+    alt_en: Ideahs — Poster design system 2026
+
+  - src: /img/projects/ideahs-carteles/02.webp
+    alt_gl: Ideahs — Sistema gráfico de carteis 2026
+    alt_es: Ideahs — Sistema gráfico de carteles 2026
+    alt_en: Ideahs — Poster design system 2026

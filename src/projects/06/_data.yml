@@ -1,0 +1,52 @@
+year: 2022
+client: 
+  - Museo do Castro de Viladonga
+categories: [grafica, editorial]
+photos_layout: has-half
+cover: /img/projects/guia-sala/guias-viladonga-sala-1-s.webp
+photos:
+  - src: /img/projects/guia-sala/guias-viladonga-sala-1.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-sala-0.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-sala-0-interior.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-sala-0-interior-doble.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-sala-0-interior-final.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-salas-0-1.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-salas-1-2.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-salas-juntas.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+
+  - src: /img/projects/guia-sala/guias-viladonga-salas-juntas-reverso.webp
+    alt_gl: Guías de sala  do castro de Viladonga
+    alt_es: Guías de sala del castro de Viladonga
+    alt_en: Guides from the Castro de Viladonga
+    class: full-width

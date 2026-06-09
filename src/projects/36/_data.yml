@@ -1,0 +1,36 @@
+year: 2016
+month: 1
+client:
+  - Sond3
+categories: [grafica, identidad]
+cover: /img/projects/10-anos/cartel-4-s.webp
+photos:
+  - src: /img/projects/10-anos/cartel-1.webp
+    class: full-width
+    alt_gl: 10 aniversario Sond3 — Gráfica e identidade
+    alt_es: 10 aniversario Sond3 — Gráfica e identidad
+    alt_en: Sond3 10th anniversary — Graphic design and identity
+
+  - src: /img/projects/10-anos/cartel-2-l.webp
+    class: has-half
+    alt_gl: 10 aniversario Sond3 — Gráfica e identidade
+    alt_es: 10 aniversario Sond3 — Gráfica e identidad
+    alt_en: Sond3 10th anniversary — Graphic design and identity
+
+  - src: /img/projects/10-anos/cartel-3-l.webp
+    class: has-half
+    alt_gl: 10 aniversario Sond3 — Gráfica e identidade
+    alt_es: 10 aniversario Sond3 — Gráfica e identidad
+    alt_en: Sond3 10th anniversary — Graphic design and identity
+
+  - src: /img/projects/10-anos/cartel-4-l.webp
+    class: has-half
+    alt_gl: 10 aniversario Sond3 — Gráfica e identidade
+    alt_es: 10 aniversario Sond3 — Gráfica e identidad
+    alt_en: Sond3 10th anniversary — Graphic design and identity
+
+  - src: /img/projects/10-anos/cartel-5-l.webp
+    class: has-half
+    alt_gl: 10 aniversario Sond3 — Gráfica e identidade
+    alt_es: 10 aniversario Sond3 — Gráfica e identidad
+    alt_en: Sond3 10th anniversary — Graphic design and identity

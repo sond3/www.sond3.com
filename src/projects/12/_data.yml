@@ -1,0 +1,23 @@
+year: 2025
+month: 4
+categories: [grafica]
+web: https://www.instagram.com/postersxgazabyadgfad
+client: 
+  - Sond3
+photos_layout: has-half big-first
+cover: /img/projects/poster-gaza/poster-gaza-01-s.webp
+photos:
+  - src: /img/projects/poster-gaza/poster-gaza-01.webp
+    alt_gl: Cartel Gaza
+    alt_es: Cartel Gaza
+    alt_en: Gaza poster
+
+  - src: /img/projects/poster-gaza/poster-gaza-02.webp
+    alt_gl: Cartel Gaza
+    alt_es: Cartel Gaza
+    alt_en: Gaza poster
+
+  - src: /img/projects/poster-gaza/poster-gaza-03.webp
+    alt_gl: Cartel Gaza
+    alt_es: Cartel Gaza
+    alt_en: Gaza poster

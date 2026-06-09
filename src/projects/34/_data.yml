@@ -1,0 +1,29 @@
+year: 2025
+month: 12
+client:
+  - Museo do Castro de Viladonga
+categories: [grafica, identidad]
+cover: /img/projects/metalurxia/portada-s.webp
+photos_layout: has-half
+photos:
+  - src: /img/projects/metalurxia/instagram-cartel-02.webp
+    alt_gl: Metalurxia — Museo do Castro de Viladonga 2026
+    alt_es: Metalurgia — Museo do Castro de Viladonga 2026
+    alt_en: Metalwork — Museo do Castro de Viladonga 2026
+    class: full-width ar-16-12
+
+  - src: /img/projects/metalurxia/instagram-cartel-03.webp
+    alt_gl: Metalurxia — Museo do Castro de Vilaoonga 2026
+    alt_es: Metalurgia — Museo do Castro de Viladonga 2026
+    alt_en: Metalwork — Museo do Castro de Viladonga 2026
+    class: full-width ar-16-12
+
+  - src: /img/projects/metalurxia/instagram-cartel-01.webp
+    alt_gl: Metalurxia — Museo do Castro de Viladonga 2026
+    alt_es: Metalurgia — Museo do Castro de Viladonga 2026
+    alt_en: Metalwork — Museo do Castro de Viladonga 2026
+
+  - src: /img/projects/metalurxia/instagram-cartel-04.webp
+    alt_gl: Metalurxia — Museo do Castro de Viladonga 2026
+    alt_es: Metalurgia — Museo do Castro de Viladonga 2026
+    alt_en: Metalwork — Museo do Castro de Viladonga 2026

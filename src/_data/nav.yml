@@ -1,0 +1,60 @@
+es:
+  menu_project: Estudio
+  menu_work: Proyectos
+  menu_anniversary: "2006 — 2026"
+  meta_project: Proyecto
+  related_projects: "Más proyectos de"
+  nav_prev: "← Anterior"
+  nav_next: "Siguiente →"
+  meta_year: Año
+  meta_client: Cliente
+  meta_categories: Categorías
+  footer_contact: Contacto
+  footer_rights: Todos los derechos reservados
+  description: "[Son de tres] somos un estudio que diseña y desarrolla proyectos de comunicación gráfica y productos digitales defendiendo un diseño honesto, ético y responsable."
+  categories:
+    grafica: Gráfica aplicada
+    identidad: Identidad
+    web: Web
+    desarrollo: Desarrollo
+    editorial: Editorial
+gl:
+  menu_project: Estudio
+  menu_work: Proxectos
+  menu_anniversary: "2006 — 2026"
+  meta_project: Proxecto
+  related_projects: "Máis proxectos de"
+  nav_prev: "← Anterior"
+  nav_next: "Seguinte →"
+  meta_year: Ano
+  meta_client: Cliente
+  meta_categories: Categorías
+  footer_contact: Contacto
+  footer_rights: Todos os dereitos reservados
+  description: "[Son de tres] somos un estudio que deseña e desenvolve proxectos de comunicación gráfica e produtos dixitais defendendo un deseño honesto, ético e responsable."
+  categories:
+    grafica: Gráfica aplicada
+    identidad: Identidade
+    desarrollo: Desenvolvemento
+    web: Web
+    editorial: Editorial
+en:
+  menu_project: Studio
+  menu_work: Projects
+  menu_anniversary: "2006 — 2026"
+  meta_project: Project
+  related_projects: "More projects on"
+  nav_prev: "← Previous"
+  nav_next: "Next →"
+  meta_year: Year
+  meta_client: Client
+  meta_categories: Categories
+  footer_contact: Contact
+  footer_rights: All rights reserved
+  description: "[Son de tres] we are a studio that designs and develops graphic communication projects and digital products advocating for honest, ethical and responsible design."
+  categories:
+    grafica: Applied graphics
+    identidad: Identity
+    web: Web
+    desarrollo: Development
+    editorial: Editorial

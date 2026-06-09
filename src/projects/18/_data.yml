@@ -1,0 +1,22 @@
+year: 2017
+client:
+  - Museo do Castro de Viladonga
+categories: [grafica, identidad]
+photos_layout: big-first
+cover: /img/projects/cartel-castro/cartel-castro-de-viladonga-s.webp
+photos:
+  - src: /img/projects/cartel-castro/cartel-castro-de-viladonga.webp
+    alt_gl: Cartaz promocional do Museo do Castro de Viladonga
+    alt_es: Cartel promocional del Museo do Castro de Viladonga
+    alt_en: Promotional poster for the Museo do Castro de Viladonga
+
+  # - src: /img/projects/cartel-castro/cartel-castro-expo-l.webp
+  #   alt_gl: Cartaz promocional do Museo do Castro de Viladonga
+  #   alt_es: Cartel promocional del Museo do Castro de Viladonga
+  #   alt_en: Promotional poster for the Museo do Castro de Viladonga
+
+  - src: /img/projects/cartel-castro/cartel-castro-expo-2-xl.webp
+    alt_gl: Cartaz promocional do Museo do Castro de Viladonga
+    alt_es: Cartel promocional del Museo do Castro de Viladonga
+    alt_en: Promotional poster for the Museo do Castro de Viladonga
+    class: full-width

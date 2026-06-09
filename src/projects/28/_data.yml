@@ -1,0 +1,32 @@
+year: 2016
+client:
+  - Gsertel (Corporación Televés)
+categories: [web, desarrollo]
+web: https://www.gsertel.com
+photos_layout: ar-16-12 big-first has-half
+cover: /img/projects/gsertel/01-gsertel.webp
+photos:
+  - src: /img/projects/gsertel/01-gsertel.webp
+    alt_gl: Gsertel — filial de Corporación Televés
+    alt_es: Gsertel — filial de Corporación Televés
+    alt_en: Gsertel — Corporación Televés subsidiary
+
+  - src: /img/projects/gsertel/02-gsertel.webp
+    alt_gl: Gsertel — filial de Corporación Televés
+    alt_es: Gsertel — filial de Corporación Televés
+    alt_en: Gsertel — Corporación Televés subsidiary
+
+  - src: /img/projects/gsertel/03-gsertel.webp
+    alt_gl: Gsertel — filial de Corporación Televés
+    alt_es: Gsertel — filial de Corporación Televés
+    alt_en: Gsertel — Corporación Televés subsidiary
+
+  - src: /img/projects/gsertel/04-gsertel.webp
+    alt_gl: Gsertel — filial de Corporación Televés
+    alt_es: Gsertel — filial de Corporación Televés
+    alt_en: Gsertel — Corporación Televés subsidiary
+
+  - src: /img/projects/gsertel/05-gsertel.webp
+    alt_gl: Gsertel — filial de Corporación Televés
+    alt_es: Gsertel — filial de Corporación Televés
+    alt_en: Gsertel — Corporación Televés subsidiary

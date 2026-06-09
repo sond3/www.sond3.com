@@ -1,0 +1,38 @@
+year: 2023
+client:
+  - Museo do Castro de Viladonga
+categories: [grafica, identidad]
+photos_layout: big-first
+cover: /img/projects/cartel-azabache/cartel-azabache-01-s.webp
+photos:
+  - src: /img/projects/cartel-azabache/cartel-azabache-01.webp
+    alt_gl: Carteis da exposición O acibeche no mundo antigo
+    alt_es: Carteles de la exposición El azabache en el mundo antiguo
+    alt_en: Posters for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/cartel-azabache/cartel-azabache-02.webp
+    class: has-half 
+    alt_gl: Carteis da exposición O acibeche no mundo antigo
+    alt_es: Carteles de la exposición El azabache en el mundo antiguo
+    alt_en: Posters for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/cartel-azabache/cartel-azabache-03.webp
+    class: has-half 
+    alt_gl: Carteis da exposición O acibeche no mundo antigo
+    alt_es: Carteles de la exposición El azabache en el mundo antiguo
+    alt_en: Posters for the exhibition Jet in the Ancient World
+
+  - src: /img/projects/cartel-azabache/azabache.webp
+    alt_gl: Exposición O acibeche no mundo antigo
+    alt_es: Exposición El azabache en el mundo antiguo
+    alt_en: Exhibition Jet in the Ancient World
+
+  - src: /img/projects/cartel-azabache/expo.webp
+    alt_gl: Exposición O acibeche no mundo antigo
+    alt_es: Exposición El azabache en el mundo antiguo
+    alt_en: Exhibition Jet in the Ancient World
+
+  - src: /img/projects/cartel-azabache/expo-2.webp
+    alt_gl: Exposición O acibeche no mundo antigo
+    alt_es: Exposición El azabache en el mundo antiguo
+    alt_en: Exhibition Jet in the Ancient World

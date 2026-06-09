@@ -1,0 +1,31 @@
+year: 2009
+client: 
+  - Museo do Castro de Viladonga
+categories: [editorial]
+photos_layout: has-half ar-16-12
+cover: /img/projects/moedas/catalogo-3.webp
+photos:
+  - src:  /img/projects/moedas/catalogo-monedas.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga
+  - src:  /img/projects/moedas/catalogo-3.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga
+
+  - src:  /img/projects/moedas/catalogo-2.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga
+
+  - src:  /img/projects/moedas/catalogo-4.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga
+
+
+  - src:  /img/projects/moedas/catalogo-monedas-interior.webp
+    alt_gl: Catálogo de moedas do castro de Viladonga
+    alt_es: Catálogo de monedas do castro de Viladonga
+    alt_en: Coin catalog from the Castro de Viladonga

@@ -1,0 +1,36 @@
+year: 2007
+client:
+  - Asociación Amigos do Castro de Viladonga
+categories: [grafica, editorial]
+photos_layout: has-half
+cover: /img/projects/revista-croa/croa-27-s.webp
+photos:
+  - src: /img/projects/revista-croa/croa-27.webp
+    alt_gl: Boletín Croa nº 27
+    alt_es: Boletín Croa nº 27
+    alt_en: Croa bulletin nº 27
+
+  - src: /img/projects/revista-croa/croa-28.webp
+    alt_gl: Boletín Croa nº 28
+    alt_es: Boletín Croa nº 28
+    alt_en: Croa bulletin nº 28
+
+  - src: /img/projects/revista-croa/croa-32.webp
+    alt_gl: Boletín Croa nº 32
+    alt_es: Boletín Croa nº 32
+    alt_en: Croa bulletin nº 32
+
+  - src: /img/projects/revista-croa/croa-31.jpg
+    alt_gl: Boletín Croa nº 31
+    alt_es: Boletín Croa nº 31
+    alt_en: Croa bulletin nº 31
+
+  - src: /img/projects/revista-croa/croa-30.jpg
+    alt_gl: Boletín Croa nº 30
+    alt_es: Boletín Croa nº 30
+    alt_en: Croa bulletin nº 30
+
+  - src: /img/projects/revista-croa/croa-29.webp
+    alt_gl: Boletín Croa nº 29
+    alt_es: Boletín Croa nº 29
+    alt_en: Croa bulletin nº 29
