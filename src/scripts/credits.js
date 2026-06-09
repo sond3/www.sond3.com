@@ -18,9 +18,9 @@ export function initCredits(gsap) {
                 onStart: () => { credits.style.pointerEvents = "auto"; },
             })
             .fromTo(inner,
-                { y: window.innerHeight },
+                { y: window.innerHeight * 0.9 },
                 { y: -inner.offsetHeight, ease: "none", duration },
-                0.1  // empieza antes, casi con el fade in
+                0  // empieza al mismo tiempo que el fade in
             )
             .to(credits, {
                 opacity: 0, duration: 0.8, ease: "power2.in",
