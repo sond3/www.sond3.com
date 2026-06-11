@@ -1,0 +1,87 @@
+.kit-digital {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+    padding-inline: 1rem;
+    /* align base */
+    align-items: baseline;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        max-width: 800px;
+        margin-block-start: 3rem;
+    }
+    a {
+        color: var(--color-fg);
+        text-decoration: none;
+        border: 1px solid var(--color-fg);
+        padding: 0.25rem 0.75rem;
+        display: inline-block;
+    }
+    p,ul {
+        font-size: var(--fs-caption);
+        margin: 0;
+        li {
+            &:not(:last-child) {
+                margin-block-end: .75rem;
+            }
+        }
+    }
+    h1, h2, h3 {
+        font-size: var(--fs-caption);
+        margin-block: 0;
+        &::after {
+            content: " —" / "";
+        }
+        & + p {
+            margin: 0;
+        }
+    }
+    h1 {
+
+        grid-column: 1 / 4;
+    }
+
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    h2, 
+    img,
+    .kit-digital-info,
+    .kit-digital-help,
+    .kit-digital-list {
+
+        grid-column: 4 / -1;
+        @media (--until-mobile) {   
+            grid-column: 1 / -1;
+        }
+    }
+    .kit-digital-info {
+            margin: 1.5rem 0 1rem 0;
+            font-size: clamp(1.15rem, calc(2.5vw + 1vw), 2.25rem);
+            line-height: 125%;
+            font-weight: 450;
+            max-width: 40ch;
+    }
+}
+.kit-digital-help {
+    font-family: "GeistMono", monospace;
+        max-width: 60ch;
+}
+.kit-digital-list {
+    display: flex;
+    flex-wrap: wrap;
+            font-family: "GeistMono", monospace;
+    column-gap: .5rem;
+    h3 {
+            font-weight: 450;
+        &::after {
+            content: "";
+        }
+    }
+}

@@ -8,4 +8,6 @@
 @import "./styles/modules/preloader.css";
 
 @import "./styles/pages/info.css";
+@import "./styles/pages/kit-digital.css";
 @import "./styles/pages/anniversary.css";
+@import "./styles/pages/error.css";

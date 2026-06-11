@@ -32,13 +32,12 @@
                 grid-column: span 2;
             }
         }
-         img {
-            vertical-align: middle;
-         }
     }
     .anniversary-photos {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        @media (min-width: 880px) {
+            grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        }
         gap: 1rem;
         padding-inline: 1rem;
         div {

@@ -43,6 +43,12 @@ html {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--color-bg);
     color: var(--color-fg);
+    /* background-image: url('/img/backs/back-01.webp');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 body {
     margin: 0;
