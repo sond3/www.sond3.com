@@ -1,0 +1,22 @@
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: var(--color-bg);
+    pointer-events: none;
+}
+
+.preloader-logo {
+    position: fixed;
+    display: inline-flex;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-fg);
+    overflow: visible;
+
+    span {
+        display: inline-block;
+        will-change: transform;
+    }
+}

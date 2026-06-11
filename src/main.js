@@ -1,12 +1,14 @@
 import { initTheme } from "./scripts/theme.js";
 import "./scripts/layout.js";
 import { initCredits } from "./scripts/credits.js";
+import { initPreloader } from "./scripts/preloader.js";
 import gsap from "npm:gsap";
 import { ScrollTrigger } from "npm:gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 initTheme();
+initPreloader(gsap);
 
 document.querySelectorAll("img[loading='lazy'], video").forEach((el) => {
     const markLoaded = () => el.classList.add("is-loaded");

@@ -5,6 +5,7 @@
 @import "./styles/modules/header.css";
 @import "./styles/modules/projects.css";
 @import "./styles/modules/footer.css";
+@import "./styles/modules/preloader.css";
 
 @import "./styles/pages/info.css";
 @import "./styles/pages/anniversary.css";
