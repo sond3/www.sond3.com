@@ -35,36 +35,27 @@ export function initPreloader(gsap) {
     gsap.set(preloaderLogo, { top: rect.top, left: rect.left });
 
     const letters = [...preloaderLogo.querySelectorAll("span")];
-    const vw = window.innerWidth;
     const vh = window.innerHeight;
-    const edges = [
-        { x: 0,   y: -vh },  // arriba
-        { x: vw,  y: 0   },  // derecha
-        { x: 0,   y: vh  },  // abajo
-        { x: -vw, y: 0   },  // izquierda
-    ];
 
     letters.forEach((letter, i) => {
-        // Las primeras 4 letras cubren un lado cada una, las restantes son aleatorias
-        const edgeIndex = i < edges.length ? i : Math.floor(Math.random() * edges.length);
-        const edge = edges[edgeIndex];
-        const jitter = gsap.utils.random(-0.3, 0.3);
+        const fromTop = i % 2 === 0;
         gsap.set(letter, {
-            x: edge.x + (edge.y === 0 ? 0 : vw * jitter),
-            y: edge.y + (edge.x === 0 ? 0 : vh * jitter),
+            y: fromTop ? -vh : vh,
+            rotate: gsap.utils.random(-180, 180),
         });
     });
 
-    gsap.timeline({ delay: 1 })
+    gsap.timeline({ delay: .25 })
         // Letras vuelan a su posición desde fuera
         .to(letters, {
-            x: 0, y: 0,
-            duration: 3,
-            ease: "elastic.out(1, 0.4)",
-            stagger: { each: 0.20, from: "random" },
+            y: 0,
+            rotate: 0,
+            duration: 3.5,
+            ease: "elastic.out(0.5, 0.25)",
+            stagger: { each: 0.2, from: "start" },
         })
         // Pausa con el logo formado
-        .to({}, { duration: 0.4 })
+        .to({}, { duration: 0.2 })
         // Fondo desaparece — logo real visible por debajo sin swap
         .to(preloader, {
             opacity: 0,

@@ -4,6 +4,7 @@
     z-index: 9999;
     background-color: var(--color-bg);
     pointer-events: none;
+    overflow: hidden;
 }
 
 .preloader-logo {
@@ -14,6 +15,8 @@
     white-space: nowrap;
     color: var(--color-fg);
     overflow: visible;
+    font-kerning: none;
+    font-feature-settings: "kern" 0;
 
     span {
         display: inline-block;

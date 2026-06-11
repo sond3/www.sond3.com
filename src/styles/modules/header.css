@@ -100,6 +100,8 @@ address {
     overflow: hidden;
     display: inline-flex;
     margin-block-start: 2vh;
+    font-kerning: none;
+    font-feature-settings: "kern" 0;
     /* span {
         &:first-child {
             color: var(--color-accent);
