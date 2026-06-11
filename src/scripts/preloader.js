@@ -59,7 +59,7 @@ export function initPreloader(gsap) {
         // Fondo desaparece — logo real visible por debajo sin swap
         .to(preloader, {
             opacity: 0,
-            duration: 0.55,
+            duration: 0.35,
             ease: "power2.inOut",
             onComplete: () => {
                 document.body.style.overflow = "";
