@@ -9,7 +9,11 @@ description: "we are a studio that designs and develops graphic communication pr
 ---
 
 {{ set projects = search.pages("lang=en type=project", "year=desc month=desc") }}
-<section class="work-list">
+<section class="project-list">
+    <ul class="project-list-options">
+       <li><button class="change-layout-as-img">Image</button></li>
+       <li><button class="change-layout-as-list">Text</button></li>
+    </ul>
     <ul class="project-filter" aria-label="{{ nav[lang].meta_categories }}">
         {{ for cat of Object.keys(nav[lang].categories) }}
         <li><button class="filter-btn" data-filter="{{ cat }}">{{ nav[lang].categories[cat] }}</button></li>
@@ -22,7 +26,7 @@ description: "we are a studio that designs and develops graphic communication pr
         <li>{{ nav[lang].meta_year }}</li>
     </ul>
     {{ for project of projects }}
-    <article class="work-item" data-categories="{{ project.categories |> join(',') }}">
+    <article class="project-item" data-categories="{{ project.categories |> join(',') }}"{{ if project.cover }} style="--cover: url('{{ project.cover }}')"{{ /if }}>
         <a href="{{ project.url }}">
             {{ if project.cover }}
             {{ if project.cover.endsWith('.webm') || project.cover.endsWith('.mp4') }}
@@ -31,15 +35,15 @@ description: "we are a studio that designs and develops graphic communication pr
             <img src="{{ project.cover }}" alt="{{ project.title }}">
             {{ /if }}
             {{ /if }}
-            <div class="work-item-meta">
-                <span class="work-item-year" aria-label="{{ nav[lang].meta_year }}">{{ project.year }}</span>
-                <h2 class="work-item-title" aria-label="{{ nav[lang].meta_project }}">{{ project.title }}</h2>
-                <span class="work-item-client" aria-label="{{ nav[lang].meta_client }}">{{ project.client |> join(", ") }}</span>
-                <ul class="work-item-categories" aria-label="{{ nav[lang].meta_categories }}">
+            <div class="project-item-meta">
+                <h2 class="project-item-title" aria-label="{{ nav[lang].meta_project }}">{{ project.title }}</h2>
+                <span class="project-item-client" aria-label="{{ nav[lang].meta_client }}">{{ project.client |> join(", ") }}</span>
+                <ul class="project-item-categories" aria-label="{{ nav[lang].meta_categories }}">
                     {{ for cat of project.categories }}
                     <li><span class="tag" data-category="{{ cat }}">{{ nav[lang].categories[cat] || cat }}</span></li>
                     {{ /for }}
                 </ul>
+                <span class="project-item-year" aria-label="{{ nav[lang].meta_year }}">{{ project.year }}</span>
             </div>
         </a>
     </article>

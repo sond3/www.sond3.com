@@ -2,9 +2,9 @@
 lang: es
 id: project-grafica-exposicion-25-anos-da-declaracion-da-muralla-de-lugo-patrimonio-da-humanidade
 url: /es/grafica-exposicion-25-anos-de-la-declaracion-de-la-muralla-de-lugo-patrimonio-de-la-humanidad/
-title: Exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade
+title: Exposición 25 años de la declaración de la muralla de Lugo Patrimonio de la Humanidad
 layout: layouts/project.vto
-description: Exposición 25 anos da declaración da muralla de Lugo Patrimonio da Humanidade.
+description: Exposición 25 años de la declaración de la muralla de Lugo Patrimonio de la Humanidad.
 ---
 Gráfica para la exposición 25 años de la declaración de la muralla de Lugo como Patrimonio de la Humanidad, llevada a cabo en el Museo del Castro de Viladonga y en el Museo Universitario Domus do Mitreo.
 
