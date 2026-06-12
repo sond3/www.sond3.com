@@ -21,6 +21,7 @@
             border-block: none;
             margin-top: 1rem;
             align-content: baseline;
+            will-change: transform;
             /* &:nth-of-type(2n) { 
                 grid-column: span 3; 
             }
