@@ -50,12 +50,12 @@ export function initPreloader(gsap) {
         .to(letters, {
             y: 0,
             rotate: 0,
-            duration: 3.25,
+            duration: 3,
             ease: "elastic.out(0.5, 0.25)",
             stagger: { each: 0.2, from: "start" },
         })
         // Pausa con el logo formado
-        .to({}, { duration: 0.125 })
+        .to({}, { duration: 0 })
         // Fondo desaparece — logo real visible por debajo sin swap
         .to(preloader, {
             opacity: 0,

@@ -18,8 +18,8 @@
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border: 0; */
-    font-size: 4.42cqi;
-    margin-left: 1rem;
+    font-size: 4.35cqi;
+    margin-inline: 1rem;
     letter-spacing: calc(-0.1% - .1cqi);
     margin-block-start: .5rem;
     margin-block-end: 2.5rem;
