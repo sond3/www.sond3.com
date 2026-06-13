@@ -109,7 +109,7 @@ function setLayoutWithTransition(isImg) {
 }
 
 if (list) {
-    setLayout(localStorage.getItem(STORAGE_KEY) !== "as-list");
+    setLayout(localStorage.getItem(STORAGE_KEY) === "as-img");
 
     btnImg?.addEventListener("click", () => setLayoutWithTransition(true));
     btnList?.addEventListener("click", () => setLayoutWithTransition(false));
