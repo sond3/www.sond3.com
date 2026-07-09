@@ -18,6 +18,7 @@
         /* gap: .5rem; */
         row-gap: 1.5rem;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
         .project-item {
             position: relative;
             display: block;
@@ -85,8 +86,10 @@
                         color: var(--color-fg);
                         /* height: 100%;
                         width: 100%; */
-            font-size: var(--fs-caption);
-            line-height: 120%;
+            /* font-size: var(--fs-caption); */
+            font-size: clamp(1.15rem, calc(2.5vw + 1vw), 2.25rem);
+            line-height: 105%;
+            font-weight: 450;
             margin-block-start: .5rem;
         }
         /* {
