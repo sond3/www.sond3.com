@@ -13,7 +13,7 @@ const isProduction = Deno.env.get("LUME_ENV") === "production";
 
 const site = lume({
     src: "./src",
-    location: new URL("https://sond3.com"),
+    location: new URL("https://www.sond3.com"),
     server: {
         open: true,
         reload: true,
@@ -52,7 +52,6 @@ site
         defaultLanguage: "gl",
     }));
 
-site.data("baseUrl", isProduction ? "https://sond3.com" : "");
 
 if (isProduction) {
     site.use(minifyHTML());
