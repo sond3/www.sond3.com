@@ -52,6 +52,8 @@ site
         defaultLanguage: "gl",
     }));
 
+site.data("baseUrl", isProduction ? "https://sond3.com" : "");
+
 if (isProduction) {
     site.use(minifyHTML());
 }
