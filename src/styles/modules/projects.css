@@ -168,7 +168,7 @@
         grid-column: 1 / -1;
         display: grid;
         grid-template-columns: subgrid;
-        color: color-mix(in srgb, var(--color-fg) 60%, var(--color-bg) 40%);
+        color: color-mix(in srgb, var(--color-fg) 70%, var(--color-bg) 30%);
     
         @media (--until-mobile) {
             row-gap: 0;
@@ -664,7 +664,7 @@
         padding:  1rem;
         color: var(--color-fg);
         display: block;
-        font-size: clamp(1.5rem, calc(2.5vw + 1vw), 1.5rem);
+        font-size: clamp(1rem, calc(0.833rem + 0.833vw), 1.5rem);
         line-height: 120%;
         font-weight: 650;
         aspect-ratio: 16 / 9;

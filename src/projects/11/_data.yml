@@ -4,7 +4,7 @@ client:
   - Universidade de Santiago de Compostela
 categories: [web, desarrollo]
 web: https://permoria.com
-cover: /img/projects/web-permoria/permoria-6.jpg
+cover: /img/projects/web-permoria/permoria-6-s.webp
 photos:
 
   - src: /img/projects/web-permoria/permoria-video2.webm
@@ -19,42 +19,42 @@ photos:
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-1.jpg
+  - src: /img/projects/web-permoria/permoria-1.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  # - src: /img/projects/web-permoria/permoria-2.jpg
+  # - src: /img/projects/web-permoria/permoria-2.webp
   #   alt_gl: Web de Permoria
   #   alt_es: Web de Permoria
   #   alt_en: Permoria website
 
-  # - src: /img/projects/web-permoria/permoria-3.jpg
+  # - src: /img/projects/web-permoria/permoria-3.webp
   #   alt_gl: Web de Permoria
   #   alt_es: Web de Permoria
   #   alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-4.jpg
+  - src: /img/projects/web-permoria/permoria-4.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-5.jpg
+  - src: /img/projects/web-permoria/permoria-5.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-6.jpg
+  - src: /img/projects/web-permoria/permoria-6.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-7.jpg
+  - src: /img/projects/web-permoria/permoria-7.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website
 
-  - src: /img/projects/web-permoria/permoria-8.jpg
+  - src: /img/projects/web-permoria/permoria-8.webp
     alt_gl: Web de Permoria
     alt_es: Web de Permoria
     alt_en: Permoria website

@@ -10,6 +10,7 @@
 .preloader-logo {
     position: fixed;
     display: inline-flex;
+    opacity: 0;
     font-weight: 800;
     text-transform: uppercase;
     white-space: nowrap;

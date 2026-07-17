@@ -2,13 +2,14 @@ import gsap from "npm:gsap";
 
 const STORAGE_KEY = "project-layout";
 
-// Always remove the attribute set by the inline script in <head>
-// (on detail pages there's no main list, but it still needs to be cleaned up)
-delete document.documentElement.dataset.layoutAsImg;
-
 const list = document.querySelector(".project-list:not(.related-projects)");
 const btnImg = document.querySelector(".change-layout-as-img");
 const btnList = document.querySelector(".change-layout-as-list");
+
+// En páginas de detalle no hay lista — limpiar el atributo del inline script
+if (!list) {
+    delete document.documentElement.dataset.layoutAsImg;
+}
 
 // Asignar un view-transition-name único a cada item
 document.querySelectorAll(".project-item").forEach((item, i) => {
@@ -89,6 +90,11 @@ function destroyParallax() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function setLayout(isImg) {
+    if (isImg) {
+        document.documentElement.dataset.layoutAsImg = '';
+    } else {
+        delete document.documentElement.dataset.layoutAsImg;
+    }
     list.classList.toggle("as-img", isImg);
     btnImg?.classList.toggle("is-active", isImg);
     btnList?.classList.toggle("is-active", !isImg);
@@ -109,7 +115,7 @@ function setLayoutWithTransition(isImg) {
 }
 
 if (list) {
-    setLayout(localStorage.getItem(STORAGE_KEY) === "as-img");
+    setLayout(localStorage.getItem(STORAGE_KEY) !== "as-list");
 
     btnImg?.addEventListener("click", () => setLayoutWithTransition(true));
     btnList?.addEventListener("click", () => setLayoutWithTransition(false));

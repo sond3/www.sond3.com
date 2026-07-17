@@ -45,6 +45,8 @@ export function initPreloader(gsap) {
         });
     });
 
+    gsap.set(preloaderLogo, { opacity: 1 });
+
     gsap.timeline({ delay: .25 })
         // Letras vuelan a su posición desde fuera
         .to(letters, {

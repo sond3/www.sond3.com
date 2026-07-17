@@ -4,7 +4,7 @@ client:
 categories: [web, desarrollo]
 web: https://www.gsertel.com
 photos_layout: ar-16-12 big-first has-half
-cover: /img/projects/gsertel/01-gsertel.webp
+cover: /img/projects/gsertel/01-gsertel-s.webp
 photos:
   - src: /img/projects/gsertel/01-gsertel.webp
     alt_gl: Gsertel — filial de Corporación Televés

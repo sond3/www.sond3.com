@@ -15,6 +15,9 @@
         margin: 0;
         overflow: hidden;
         aspect-ratio: 16/8;
+        @media (--until-mobile) {
+            aspect-ratio: 1/1;
+        }
         img {
             vertical-align: middle;
             width: 100%;
@@ -24,9 +27,6 @@
             transition: opacity 0.4s ease;
             &.is-loaded {
                 opacity: 1;
-            }
-            @media (--until-mobile) {  
-                aspect-ratio: 1/1;  
             }
         }
     }
@@ -96,6 +96,10 @@
     margin-block: 3vh;
     font-family: "GeistMono", monospace;
     font-size: var(--fs-caption);
+    a {
+        color: var(--color-fg);
+        text-decoration: underline;
+    }
     ul {
         list-style-type: "";
         margin: 0;

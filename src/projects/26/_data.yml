@@ -3,7 +3,7 @@ client:
   - Auditorio de Galicia
 categories: [web, desarrollo]
 photos_layout: has-half big-first
-cover: /img/projects/auditorio-galicia/01-auditorio.webp
+cover: /img/projects/auditorio-galicia/01-auditorio-s.webp
 photos:
   - src: /img/projects/auditorio-galicia/01-auditorio.webp
     alt_gl: XI Premio Auditorio de Galicia para Novos Artistas 2019
