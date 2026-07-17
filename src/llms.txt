@@ -1,0 +1,20 @@
+# Sond3 — Deseño & desenvolvemento web
+
+> Sond3 é un estudio de deseño e desenvolvemento web con sede no rural de Lugo, fundado en 2006 por Natalia Crecente, Segundo Fdez e Diego Vilariño.
+
+## Páxinas principais
+
+- [Proxectos](https://sond3.com/): Listado de todos os proxectos do estudio.
+- [Estudio](https://sond3.com/informacion/): Información sobre o equipo, clientes e distinciones.
+- [20 Aniversario](https://sond3.com/aniversario/): Celebración dos 20 anos de Sond3 (2006–2026).
+
+## Versións en outros idiomas
+
+- [Sond3 en español](https://sond3.com/es/): Versión en castellano del sitio.
+- [Sond3 in English](https://sond3.com/en/): English version of the site.
+
+## Contacto
+
+- Email: info@sond3.com
+- Teléfono: +34 665 660 814
+- Instagram: https://instagram.com/sond3estudio

@@ -22,6 +22,11 @@
             padding-block: 0.25rem;
         }
     }
+    address {
+        a {
+            line-height: 172%;
+        }
+    }
     .logo {
         font-family: "Geist", sans-serif;
         /* hacer texto con lineas */
