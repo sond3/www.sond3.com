@@ -18,6 +18,9 @@
     a {
         color: var(--color-fg);
         display: inline-block;
+        @media (hover: none) and (pointer: coarse) {
+            padding-block: 0.25rem;
+        }
     }
     .logo {
         font-family: "Geist", sans-serif;

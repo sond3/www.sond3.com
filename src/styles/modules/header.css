@@ -80,6 +80,11 @@
 address {
     grid-column: 4 / 9;
     font-style: normal;
+    @media (hover: none) and (pointer: coarse) {
+        a {
+            padding-block: 0.25rem;
+        }
+    }
     .social {
         margin-top: 1.1rem;
         &::after {
